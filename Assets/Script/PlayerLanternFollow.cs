@@ -4,12 +4,23 @@ using UnityEngine;
 
 public class PlayerLanternFollow : MonoBehaviour
 {
-    [SerializeField] Transform followPoint;
+    public Transform followPoint;
     [SerializeField] float lerpSpeed = 2f;
-   private void Update() {
+    public Throw myThrow = null;
+
+   private void Update() 
+   {
     LightSourceFollow();
-    
+    if(myThrow)
+    {
+    Show(myThrow.CoolDown());    
+    }
    }
+
+    void Show(bool show)
+    {
+        GetComponent<MeshRenderer>().enabled = !show;
+    }
 
     private void LightSourceFollow()
     {

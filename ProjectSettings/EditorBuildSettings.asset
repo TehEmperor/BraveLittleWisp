@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WorldMapPrototype.unity
     guid: 836acb9f353500b4796f6144c00dc41e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutorial.unity
     guid: ad6e126866597ce499c20980cc4690a9
   - enabled: 1
@@ -23,13 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BlackPit.unity
     guid: d8e779e03b508d141881809c92bad7e4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TheAbyss.unity
     guid: 05b83db92d731b54daf8b8d0049d5bc7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ForlornShore.unity
     guid: 40fdcec9e1ba5b7428377804f66d7ef2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/FuneralPyre.unity
     guid: 41cb14572d56cea40b1dd4dc6f153cbd
   m_configObjects: {}

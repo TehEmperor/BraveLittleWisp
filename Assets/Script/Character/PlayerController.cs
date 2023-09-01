@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] UnityEvent onMouseClick;
     [SerializeField] float speedMod = 1f;
+    Animator animator;
     public event Action<float> onChangeBrightness; //We could make it static
     public static event Action<Vector3> OnEnemyDetection;
     public static event Action onLastRights;
@@ -33,6 +34,7 @@ public class PlayerController : MonoBehaviour
         myHealth = GetComponent<Health>();
         myHealth.onDeath += LastRights;
         myMover = GetComponent<Mover>();
+        animator = GetComponentInChildren<Animator>();
 
     }
     private void OnDisable()
@@ -140,10 +142,18 @@ public class PlayerController : MonoBehaviour
 
     private void LastRights()
     {
-        GetComponent<AudioSource>().PlayOneShot(onDeathSound);
-        Animator animator = GetComponentInChildren<Animator>();
+        GetComponent<AudioSource>().PlayOneShot(onDeathSound);        
         animator.SetTrigger("Death");
         StartCoroutine(WaitTillLastRightsFinished(1.8f)); //hardcoded. Should make logic better but for now it's ok
+    }
+
+    public void SetThrowTrigger()
+    {
+        animator.SetTrigger("Throw");        
+    }
+    public void ResetThrowTrigger()
+    {
+        animator.ResetTrigger("Throw");           
     }
 
     IEnumerator WaitTillLastRightsFinished(float time)

@@ -25,10 +25,13 @@ public class Throw : MonoBehaviour
         playerController = GameObject.FindGameObjectWithTag(Tag.PLAYER).GetComponent<PlayerController>();  
         timeOfLastThrow = Time.time;
         playerHealth = GameObject.FindGameObjectWithTag(Tag.PLAYER).GetComponent<Health>();
+        if(myLantern)
+        {
         myLantern.myThrow = this;
         myLantern.followPoint = this.transform;
-        playerController.ResetThrowTrigger();
+        }
     }
+
    
     void Update()
     {

@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
         myHealth.onDeath += LastRights;
         myMover = GetComponent<Mover>();
         animator = GetComponentInChildren<Animator>();
+        ResetThrowTrigger();
 
     }
     private void OnDisable()

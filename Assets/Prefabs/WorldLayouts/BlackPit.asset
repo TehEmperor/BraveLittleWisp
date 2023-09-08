@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   previousLevels:
   - {fileID: 11400000, guid: 13c03d2d64a26f64daa0335efc10389c, type: 2}
-  nextLevels:
-  - {fileID: 11400000, guid: cdea0dafb589b444282bdd96a1fea63a, type: 2}
-  isFinished: 0
-  isDiscovered: 0
+  nextLevels: []
+  isFinished: 1
+  isDiscovered: 1
   isSpecial: 0
   levelSceneReference: BlackPit
   soulsAquired: 3

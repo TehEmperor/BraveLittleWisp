@@ -24,7 +24,7 @@ public class MapNode : MonoBehaviour, ISaveable
         public bool finished;
     }
 
-
+    
     public void SetKeeper(WorldMapKeeper keeper)
     {
         myKeeper = keeper;

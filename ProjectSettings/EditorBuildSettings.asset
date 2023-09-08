@@ -8,12 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Main Menu.unity
     guid: 270a7477d5a8adc0785c3058d1b4bcc8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/WorldMapPrototype.unity
     guid: 836acb9f353500b4796f6144c00dc41e
   - enabled: 0
     path: Assets/Scenes/Tutorial.unity
     guid: ad6e126866597ce499c20980cc4690a9
+  - enabled: 1
+    path: Assets/Scenes/DemoBuildMap.unity
+    guid: 9a14037e9b1ff674b94816374def2c3c
   - enabled: 1
     path: Assets/Scenes/GreatTree.unity
     guid: 7779023090e98e64fb2719e1a6f6ebab

@@ -54,5 +54,6 @@
     "FSharp.suggestGitignore": false,
     "cSpell.words": [
         "Linecast"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }

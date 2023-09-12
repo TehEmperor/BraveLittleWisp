@@ -7,12 +7,12 @@ using UnityEngine.AI;
 public class WorldMapNavigator : MonoBehaviour
 {    
     [SerializeField] float cameraLerpDuration = 2f;    
-    [SerializeField] NavMeshAgent agent;
-
+    [SerializeField] GameObject subject;
+    List<Vector3> destinationsToReach = new List<Vector3>();
     
     public void NavigateToLevel(MapNode node)
     {
-        agent.destination = node.transform.position;
+        Teleport(node.transform.position);
         onSetCamera?.Invoke(node.GetViewPoint(), cameraLerpDuration);
     }
     
@@ -20,6 +20,22 @@ public class WorldMapNavigator : MonoBehaviour
     {
         onSetCamera?.Invoke(view, 1);
     }
+
+    private void Teleport(Vector3 destination)
+    {
+        destinationsToReach.Add(destination);
+        StartCoroutine(WaitAndGo());
+
+    }
+
+    IEnumerator WaitAndGo()
+    {
+        yield return new WaitForSeconds(cameraLerpDuration/2);
+        subject.transform.position = destinationsToReach[0];
+        destinationsToReach.Remove(subject.transform.position);
+    }
+
+
 
 
 

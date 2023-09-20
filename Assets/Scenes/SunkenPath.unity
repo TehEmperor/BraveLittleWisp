@@ -258,6 +258,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Ruins_Column_Square_Half_Stone_02
       objectReference: {fileID: 0}
+    - target: {fileID: 4905159579812839901, guid: 3cc01e048898c1248aa297598653f43e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5717724393059720039, guid: 3cc01e048898c1248aa297598653f43e, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -1516,6 +1520,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
 --- !u!1001 &145600056
@@ -1528,6 +1536,10 @@ PrefabInstance:
     - target: {fileID: 1283329790052642387, guid: 25a72a2babac86a4c83411a1f2f4621f, type: 3}
       propertyPath: m_Name
       value: Prop_Ruins_Column_Sandstone_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283329790052642387, guid: 25a72a2babac86a4c83411a1f2f4621f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1283329790052642387, guid: 25a72a2babac86a4c83411a1f2f4621f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1938,6 +1950,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
 --- !u!1001 &166504104
@@ -2323,6 +2339,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Stairs_Grand_Sandstone_03
       objectReference: {fileID: 0}
+    - target: {fileID: 7704614351920253435, guid: 3659b0bd9818993489250298aff75568, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3659b0bd9818993489250298aff75568, type: 3}
 --- !u!1001 &225136533
@@ -2391,6 +2411,10 @@ PrefabInstance:
     - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
       propertyPath: m_Name
       value: Coral_Plate_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
@@ -2667,6 +2691,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Ruins_Column_Square_Half_Stone_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5006147338008377871, guid: 3bd37efa486e54445ae6e4db826200e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5634769315035209909, guid: 3bd37efa486e54445ae6e4db826200e2, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -2768,6 +2796,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Stairs_Grand_Sandstone_01
       objectReference: {fileID: 0}
+    - target: {fileID: 7543335274166743226, guid: d3d9b38d830870b449134bd2a6fb95ec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3d9b38d830870b449134bd2a6fb95ec, type: 3}
 --- !u!1001 &271243738
@@ -2836,6 +2868,10 @@ PrefabInstance:
     - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
       propertyPath: m_Name
       value: Coral_Plate_01 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
@@ -2906,6 +2942,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
 --- !u!1001 &282835152
@@ -2975,6 +3015,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
 --- !u!1001 &296604639
@@ -3031,6 +3075,10 @@ PrefabInstance:
     - target: {fileID: 2136027960551216696, guid: 8ecebfbd3ceaed04eb850a78863e9414, type: 3}
       propertyPath: m_Name
       value: Prop_Ruins_Column_Sandstone_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136027960551216696, guid: 8ecebfbd3ceaed04eb850a78863e9414, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2136027960551216696, guid: 8ecebfbd3ceaed04eb850a78863e9414, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3179,6 +3227,10 @@ PrefabInstance:
     - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
       propertyPath: m_Name
       value: Coral_Plate_01 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
@@ -3951,6 +4003,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
 --- !u!1001 &405827739
@@ -3963,6 +4019,10 @@ PrefabInstance:
     - target: {fileID: 3490553302194437000, guid: 02cc8b6e82e20f04e8a1cad33ce41799, type: 3}
       propertyPath: m_Name
       value: Coral_Stem_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490553302194437000, guid: 02cc8b6e82e20f04e8a1cad33ce41799, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4268074412305932594, guid: 02cc8b6e82e20f04e8a1cad33ce41799, type: 3}
       propertyPath: m_RootOrder
@@ -4246,6 +4306,10 @@ PrefabInstance:
     - target: {fileID: 2377299847293314821, guid: a3be65c840a8a164da25973d249a5079, type: 3}
       propertyPath: m_Name
       value: Prop_Ruins_Archway_Sandstone_Half_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377299847293314821, guid: a3be65c840a8a164da25973d249a5079, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3149719493500108223, guid: a3be65c840a8a164da25973d249a5079, type: 3}
       propertyPath: m_RootOrder
@@ -4596,6 +4660,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
 --- !u!1001 &469529306
@@ -4936,6 +5004,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8662822480085747844, guid: cb87fadfea2174e47b60f1a06fa39256, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb87fadfea2174e47b60f1a06fa39256, type: 3}
 --- !u!1001 &490106050
@@ -4992,6 +5064,10 @@ PrefabInstance:
     - target: {fileID: 5614591669600248637, guid: bbcd68e85e7f81e4c9e7877c1f4301e2, type: 3}
       propertyPath: m_Name
       value: Prop_Ruins_Column_Square_Stone_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5614591669600248637, guid: bbcd68e85e7f81e4c9e7877c1f4301e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbcd68e85e7f81e4c9e7877c1f4301e2, type: 3}
@@ -5724,6 +5800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
 --- !u!4 &550904448 stripped
@@ -5790,6 +5870,10 @@ PrefabInstance:
     - target: {fileID: 2136027960551216696, guid: 8ecebfbd3ceaed04eb850a78863e9414, type: 3}
       propertyPath: m_Name
       value: Prop_Ruins_Column_Sandstone_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136027960551216696, guid: 8ecebfbd3ceaed04eb850a78863e9414, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ecebfbd3ceaed04eb850a78863e9414, type: 3}
@@ -6176,6 +6260,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
 --- !u!1 &592796076
@@ -6434,6 +6522,10 @@ PrefabInstance:
     - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
       propertyPath: m_Name
       value: Coral_Plate_01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
@@ -6729,8 +6821,12 @@ PrefabInstance:
       value: -11.8
       objectReference: {fileID: 0}
     - target: {fileID: 3407758179795904608, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3407758179795904608, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.12
+      value: 65.4
       objectReference: {fileID: 0}
     - target: {fileID: 4212827693177027271, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: far clip plane
@@ -6743,6 +6839,14 @@ PrefabInstance:
     - target: {fileID: 6616107625852864004, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_Name
       value: Core
+      objectReference: {fileID: 0}
+    - target: {fileID: 7139064691098448100, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: lightYrangeMax
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7139064691098448100, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: lightMaxIntensity
+      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
@@ -7293,6 +7397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Stairs_Grand_Stone_01
       objectReference: {fileID: 0}
+    - target: {fileID: 3241577059899095456, guid: 0307e11014da7f044ab54b53305ecb14, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0307e11014da7f044ab54b53305ecb14, type: 3}
 --- !u!1001 &731608892
@@ -7384,6 +7492,10 @@ PrefabInstance:
     - target: {fileID: 5954746815015039296, guid: 792a274455e009849a18a2c5cefcd37f, type: 3}
       propertyPath: m_Name
       value: Coral_Clump_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954746815015039296, guid: 792a274455e009849a18a2c5cefcd37f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6478518228873931770, guid: 792a274455e009849a18a2c5cefcd37f, type: 3}
       propertyPath: m_RootOrder
@@ -7888,6 +8000,10 @@ PrefabInstance:
     - target: {fileID: 7216348725367296379, guid: 18c97a0a94df3644d842a195ec422f48, type: 3}
       propertyPath: m_Name
       value: Prop_Ruins_Column_Stone_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7216348725367296379, guid: 18c97a0a94df3644d842a195ec422f48, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8029441231365606337, guid: 18c97a0a94df3644d842a195ec422f48, type: 3}
       propertyPath: m_RootOrder
@@ -8634,6 +8750,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Stem_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3490553302194437000, guid: 02cc8b6e82e20f04e8a1cad33ce41799, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4268074412305932594, guid: 02cc8b6e82e20f04e8a1cad33ce41799, type: 3}
       propertyPath: m_RootOrder
       value: 65
@@ -8843,6 +8963,10 @@ PrefabInstance:
       value: Prop_Stairs_Grand_Sandstone_03 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7704614351920253435, guid: 3659b0bd9818993489250298aff75568, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704614351920253435, guid: 3659b0bd9818993489250298aff75568, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -8863,6 +8987,10 @@ PrefabInstance:
     - target: {fileID: 88185665037783066, guid: b833ce79805a56840aaee8a60278cee7, type: 3}
       propertyPath: m_Name
       value: Prop_Ruins_Column_Square_Stone_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 88185665037783066, guid: b833ce79805a56840aaee8a60278cee7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 88185665037783066, guid: b833ce79805a56840aaee8a60278cee7, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8982,6 +9110,10 @@ PrefabInstance:
       value: Prop_Ruins_Column_Sandstone_02 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 2136027960551216696, guid: 8ecebfbd3ceaed04eb850a78863e9414, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136027960551216696, guid: 8ecebfbd3ceaed04eb850a78863e9414, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -9059,6 +9191,10 @@ PrefabInstance:
     - target: {fileID: 4953905518998898464, guid: 54426cb059fcc3745b69792b27de1b17, type: 3}
       propertyPath: m_Name
       value: Coral_Plate_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4953905518998898464, guid: 54426cb059fcc3745b69792b27de1b17, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5761263350037519770, guid: 54426cb059fcc3745b69792b27de1b17, type: 3}
       propertyPath: m_RootOrder
@@ -9410,6 +9546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Ruins_Building_Temple_Stone_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1935892874169587117, guid: 7d689f667b4954f41a00f44b3c39a6f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d689f667b4954f41a00f44b3c39a6f1, type: 3}
 --- !u!4 &983478667 stripped
@@ -9566,6 +9706,10 @@ PrefabInstance:
     - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
       propertyPath: m_Name
       value: Coral_Plate_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
@@ -9787,6 +9931,10 @@ PrefabInstance:
     - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
       propertyPath: m_Name
       value: Coral_Plate_01 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
@@ -10194,6 +10342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
 --- !u!1 &1029175694
@@ -10559,6 +10711,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
 --- !u!4 &1102466789 stripped
@@ -10865,6 +11021,10 @@ PrefabInstance:
     - target: {fileID: 7543335274166743226, guid: d3d9b38d830870b449134bd2a6fb95ec, type: 3}
       propertyPath: m_Name
       value: Prop_Stairs_Grand_Sandstone_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7543335274166743226, guid: d3d9b38d830870b449134bd2a6fb95ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7543335274166743226, guid: d3d9b38d830870b449134bd2a6fb95ec, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11526,6 +11686,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Ruins_Archway_Sandstone_Half_01
       objectReference: {fileID: 0}
+    - target: {fileID: 2175234488285342506, guid: b0116b2b127f04842a938c9404b55198, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0116b2b127f04842a938c9404b55198, type: 3}
 --- !u!1001 &1216284765
@@ -11669,6 +11833,10 @@ PrefabInstance:
     - target: {fileID: 7543335274166743226, guid: d3d9b38d830870b449134bd2a6fb95ec, type: 3}
       propertyPath: m_Name
       value: Prop_Stairs_Grand_Sandstone_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7543335274166743226, guid: d3d9b38d830870b449134bd2a6fb95ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7543335274166743226, guid: d3d9b38d830870b449134bd2a6fb95ec, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11830,6 +11998,10 @@ PrefabInstance:
     - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
       propertyPath: m_Name
       value: Coral_Plate_01 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
@@ -12115,7 +12287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6728022121586114121, guid: c788732b191ecce408f11b33c3f748c8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6728022121586114121, guid: c788732b191ecce408f11b33c3f748c8, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12625,6 +12797,10 @@ PrefabInstance:
     - target: {fileID: 1935892874169587117, guid: 7d689f667b4954f41a00f44b3c39a6f1, type: 3}
       propertyPath: m_Name
       value: Prop_Ruins_Building_Temple_Stone_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935892874169587117, guid: 7d689f667b4954f41a00f44b3c39a6f1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1935892874169587117, guid: 7d689f667b4954f41a00f44b3c39a6f1, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -13161,6 +13337,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
 --- !u!4 &1379155657 stripped
@@ -13235,6 +13415,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
 --- !u!4 &1381552388 stripped
@@ -13290,6 +13474,10 @@ PrefabInstance:
     - target: {fileID: 1283329790052642387, guid: 25a72a2babac86a4c83411a1f2f4621f, type: 3}
       propertyPath: m_Name
       value: Prop_Ruins_Column_Sandstone_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283329790052642387, guid: 25a72a2babac86a4c83411a1f2f4621f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1283329790052642387, guid: 25a72a2babac86a4c83411a1f2f4621f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -13539,6 +13727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
 --- !u!1 &1421475754
@@ -13713,6 +13905,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Ruins_Archway_Stone_Full_01
       objectReference: {fileID: 0}
+    - target: {fileID: 6511763453618424004, guid: aa3823c21047f5145b744330faabca54, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa3823c21047f5145b744330faabca54, type: 3}
 --- !u!1001 &1443204013
@@ -13781,6 +13977,10 @@ PrefabInstance:
     - target: {fileID: 1771101967762535115, guid: 0f10978093960fc4aafc0c3239bb4f86, type: 3}
       propertyPath: m_Name
       value: Prop_Walkway_Timber_Simple_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1771101967762535115, guid: 0f10978093960fc4aafc0c3239bb4f86, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1771101967762535115, guid: 0f10978093960fc4aafc0c3239bb4f86, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -13924,6 +14124,10 @@ PrefabInstance:
     - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
       propertyPath: m_Name
       value: Coral_Plate_01 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
@@ -14538,6 +14742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
 --- !u!4 &1541617960 stripped
@@ -14683,6 +14891,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Ruins_Building_Fort_Chunk_Large_Stone_01
       objectReference: {fileID: 0}
+    - target: {fileID: 4937917708957050649, guid: baaa63da6be12c84b8ac61787df374f8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5750200978235112867, guid: baaa63da6be12c84b8ac61787df374f8, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -14807,6 +15019,10 @@ PrefabInstance:
     - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
       propertyPath: m_Name
       value: Coral_Plate_01 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
@@ -14951,6 +15167,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
 --- !u!4 &1559911134 stripped
@@ -15024,6 +15244,10 @@ PrefabInstance:
     - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
       propertyPath: m_Name
       value: Coral_Plate_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
@@ -15309,6 +15533,10 @@ PrefabInstance:
     - target: {fileID: 5954746815015039296, guid: 792a274455e009849a18a2c5cefcd37f, type: 3}
       propertyPath: m_Name
       value: Coral_Clump_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954746815015039296, guid: 792a274455e009849a18a2c5cefcd37f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6478518228873931770, guid: 792a274455e009849a18a2c5cefcd37f, type: 3}
       propertyPath: m_RootOrder
@@ -15680,6 +15908,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_03
       objectReference: {fileID: 0}
+    - target: {fileID: 8662822480085747844, guid: cb87fadfea2174e47b60f1a06fa39256, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb87fadfea2174e47b60f1a06fa39256, type: 3}
 --- !u!1001 &1655796662
@@ -15748,6 +15980,10 @@ PrefabInstance:
     - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
       propertyPath: m_Name
       value: Coral_Plate_01 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
@@ -15964,7 +16200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4453826379387618833, guid: 5424d9c4ac56fdd4caeba9ec9607ec40, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4453826379387618833, guid: 5424d9c4ac56fdd4caeba9ec9607ec40, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16523,6 +16759,10 @@ PrefabInstance:
     - target: {fileID: 5954746815015039296, guid: 792a274455e009849a18a2c5cefcd37f, type: 3}
       propertyPath: m_Name
       value: Coral_Clump_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954746815015039296, guid: 792a274455e009849a18a2c5cefcd37f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6478518228873931770, guid: 792a274455e009849a18a2c5cefcd37f, type: 3}
       propertyPath: m_RootOrder
@@ -17125,6 +17365,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
 --- !u!4 &1783319865 stripped
@@ -17362,6 +17606,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Clump_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5954746815015039296, guid: 792a274455e009849a18a2c5cefcd37f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6478518228873931770, guid: 792a274455e009849a18a2c5cefcd37f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -17542,6 +17790,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Stairs_Grand_Sandstone_02
       objectReference: {fileID: 0}
+    - target: {fileID: 5328258246370462063, guid: 65df5a83175f65e48a8b6a6b0c69b3ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65df5a83175f65e48a8b6a6b0c69b3ae, type: 3}
 --- !u!1001 &1818733126
@@ -17554,6 +17806,10 @@ PrefabInstance:
     - target: {fileID: 3656150150704979864, guid: 97f41dba374fb344a854dfd37ac7045e, type: 3}
       propertyPath: m_Name
       value: Prop_Bridge_Wooden_Hanging_Short_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656150150704979864, guid: 97f41dba374fb344a854dfd37ac7045e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4176685805662799138, guid: 97f41dba374fb344a854dfd37ac7045e, type: 3}
       propertyPath: m_RootOrder
@@ -17611,6 +17867,10 @@ PrefabInstance:
     - target: {fileID: 1283329790052642387, guid: 25a72a2babac86a4c83411a1f2f4621f, type: 3}
       propertyPath: m_Name
       value: Prop_Ruins_Column_Sandstone_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283329790052642387, guid: 25a72a2babac86a4c83411a1f2f4621f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1283329790052642387, guid: 25a72a2babac86a4c83411a1f2f4621f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -18067,6 +18327,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
 --- !u!4 &1871021701 stripped
@@ -18334,8 +18598,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+--- !u!1 &1898434940 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7139064691098448121, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+  m_PrefabInstance: {fileID: 670363452}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1898434944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898434940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1001 &1905290869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18429,6 +18722,10 @@ PrefabInstance:
     - target: {fileID: 88185665037783066, guid: b833ce79805a56840aaee8a60278cee7, type: 3}
       propertyPath: m_Name
       value: Prop_Ruins_Column_Square_Stone_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 88185665037783066, guid: b833ce79805a56840aaee8a60278cee7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 88185665037783066, guid: b833ce79805a56840aaee8a60278cee7, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -18718,6 +19015,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Stem_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3490553302194437000, guid: 02cc8b6e82e20f04e8a1cad33ce41799, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4268074412305932594, guid: 02cc8b6e82e20f04e8a1cad33ce41799, type: 3}
       propertyPath: m_RootOrder
       value: 69
@@ -18830,6 +19131,10 @@ PrefabInstance:
     - target: {fileID: 2136027960551216696, guid: 8ecebfbd3ceaed04eb850a78863e9414, type: 3}
       propertyPath: m_Name
       value: Prop_Ruins_Column_Sandstone_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136027960551216696, guid: 8ecebfbd3ceaed04eb850a78863e9414, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2136027960551216696, guid: 8ecebfbd3ceaed04eb850a78863e9414, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -19699,6 +20004,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Plate_01 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
 --- !u!1001 &1976926248
@@ -20193,6 +20502,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_Upright_01
       objectReference: {fileID: 0}
+    - target: {fileID: 2740301457678000225, guid: 8d0e54ed2ce6c9f42930a6d9d82730d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3264072910390803163, guid: 8d0e54ed2ce6c9f42930a6d9d82730d8, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -20400,6 +20713,10 @@ PrefabInstance:
     - target: {fileID: 2319945482669036500, guid: 7797614be9e8790408852f1674e3dd7e, type: 3}
       propertyPath: m_Name
       value: Prop_Ruins_Archway_Stone_Half_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319945482669036500, guid: 7797614be9e8790408852f1674e3dd7e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3132757887612537198, guid: 7797614be9e8790408852f1674e3dd7e, type: 3}
       propertyPath: m_RootOrder
@@ -20836,6 +21153,10 @@ PrefabInstance:
     - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
       propertyPath: m_Name
       value: Coral_Plate_01 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730592193405141, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9058902d2f05f048ab29c18b31ff08f, type: 3}
@@ -21372,6 +21693,10 @@ PrefabInstance:
       value: Prop_Ruins_Bridge_Stone_01
       objectReference: {fileID: 0}
     - target: {fileID: 2455299566203713381, guid: 53833fd592e2a314e93ba4299f171eaa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2455299566203713381, guid: 53833fd592e2a314e93ba4299f171eaa, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -21443,6 +21768,10 @@ PrefabInstance:
     - target: {fileID: 1283329790052642387, guid: 25a72a2babac86a4c83411a1f2f4621f, type: 3}
       propertyPath: m_Name
       value: Prop_Ruins_Column_Sandstone_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283329790052642387, guid: 25a72a2babac86a4c83411a1f2f4621f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1283329790052642387, guid: 25a72a2babac86a4c83411a1f2f4621f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -21627,6 +21956,10 @@ PrefabInstance:
     - target: {fileID: 2136027960551216696, guid: 8ecebfbd3ceaed04eb850a78863e9414, type: 3}
       propertyPath: m_Name
       value: Prop_Ruins_Column_Sandstone_02 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136027960551216696, guid: 8ecebfbd3ceaed04eb850a78863e9414, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2136027960551216696, guid: 8ecebfbd3ceaed04eb850a78863e9414, type: 3}
       propertyPath: m_StaticEditorFlags

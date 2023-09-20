@@ -6,7 +6,8 @@ using UnityEngine;
 
 public class LightSource : MonoBehaviour
 {
-    [SerializeField] float lightMaxRange = 10f, lightMinIntensity = 0f, lightMaxIntensity = 20f;
+    [SerializeField] float lightMaxRange = 18f, lightMinIntensity = 0f, lightMaxIntensity = 200f;
+    [SerializeField] [Range(0,1)] float effectiveRangeMod = 0.8f;
     [SerializeField] PlayerController myPlayer;
     [SerializeField] float lerpSpeed = 20f;    
     [SerializeField] float lightYRangeMin = 0.3f, lightYrangeMax = 6.8f; 
@@ -36,13 +37,15 @@ public class LightSource : MonoBehaviour
     {
         myLight.range = lightMaxRange;
         currentMnY = transform.localPosition.y;
+        lightYrangeMax = lightMaxRange * 0.5f;
         CalculateLightHeight();
        
     }
 
     public float GetLightRange()
     {
-        return myLight.range;
+        float effectiveRange = myLight.range * effectiveRangeMod;
+        return effectiveRange;
     }
 
     public float GetLightAsPercentage()

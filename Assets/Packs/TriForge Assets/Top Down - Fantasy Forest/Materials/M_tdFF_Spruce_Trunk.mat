@@ -28,7 +28,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ColorVariationMask:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: c849c2a1b3558b14d8f1d7f81d5841cf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -47,8 +47,24 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Height:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LayerAlbedo:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LayerNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: c23d23612b507bf4ebe291bce68dffa6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex1:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
@@ -98,6 +114,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _AOIntensity: 0
+    - _BlendFactor: 0
+    - _BlendFalloff: 0
     - _BumpScale: 1
     - _ColorVarianceAmount: 0.44
     - _CullMode: 2
@@ -112,10 +130,12 @@ Material:
     - _GlossyReflections: 1
     - _GradientPosition: 2.93
     - _GradientUV: 0
+    - _LayerTiling: 0
     - _MainTextureBrightness: 1
     - _Metallic: 0
     - _Mode: 0
     - _NormalIntensity: 1
+    - _Occlusion: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Smoothness: 1

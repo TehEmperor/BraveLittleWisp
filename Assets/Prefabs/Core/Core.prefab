@@ -258,6 +258,14 @@ PrefabInstance:
       propertyPath: m_BoundingSphereOverride.z
       value: 4.5904e-41
       objectReference: {fileID: 0}
+    - target: {fileID: 6441825271852887823, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
+      propertyPath: effectiveRangeMod
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441825271852887823, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
+      propertyPath: lightMaxIntensity
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 913813700977064182, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
     - {fileID: 1530153452291929993, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
@@ -289,6 +297,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7f169910d842614384537206f92e58f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &7139064691098448121 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6441825271852887826, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
+  m_PrefabInstance: {fileID: 4212827692587294699}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4212827693372482164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7139064691098448121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1001 &4212827693203237803
 PrefabInstance:
   m_ObjectHideFlags: 0

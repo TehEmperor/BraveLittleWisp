@@ -9,11 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52121a8decb73134ea63afa970c969a2, type: 3}
-  m_Name: DemoLayout
+  m_Script: {fileID: 11500000, guid: 3c5bfd72db656ca4fb8db45e42bdcea0, type: 3}
+  m_Name: Tutorial
   m_EditorClassIdentifier: 
-  levelsMap:
-  - {fileID: 11400000, guid: 0f8fed79d303a3940a5757206db19111, type: 2}
+  previousLevels: []
+  nextLevels:
   - {fileID: 11400000, guid: ff3bc768ed80ce446af45cabd5d25f04, type: 2}
-  - {fileID: 11400000, guid: 13c03d2d64a26f64daa0335efc10389c, type: 2}
-  - {fileID: 11400000, guid: 8edc38011c440f9439cb81497d7d991b, type: 2}
+  isFinished: 1
+  isDiscovered: 1
+  isSpecial: 0
+  levelSceneReference: Tutorial
+  soulsAquired: 1

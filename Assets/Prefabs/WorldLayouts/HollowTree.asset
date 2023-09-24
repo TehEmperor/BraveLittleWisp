@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c5bfd72db656ca4fb8db45e42bdcea0, type: 3}
   m_Name: HollowTree
   m_EditorClassIdentifier: 
-  previousLevels: []
+  previousLevels:
+  - {fileID: 11400000, guid: 0f8fed79d303a3940a5757206db19111, type: 2}
   nextLevels:
   - {fileID: 11400000, guid: 13c03d2d64a26f64daa0335efc10389c, type: 2}
-  isFinished: 0
+  isFinished: 1
   isDiscovered: 1
   isSpecial: 0
   levelSceneReference: GreatTree

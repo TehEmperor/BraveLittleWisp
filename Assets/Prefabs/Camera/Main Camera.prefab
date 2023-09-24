@@ -89,8 +89,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 503a293c99215ea49a3121c14d7b1ba6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMount: {fileID: 0}
+  frameStep: 3
+  rotationPower: 3
+  rotationLerp: 0.5
   cameraSpeed: 3
+  _look: {x: 0, y: 0}
+  cameraMount: {fileID: 0}
 --- !u!114 &8465621011600619984
 MonoBehaviour:
   m_ObjectHideFlags: 0

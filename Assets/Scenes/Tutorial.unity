@@ -180,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3555437357746918730, guid: b59c880c76cda7c409855aa5230530ec, type: 3}
       propertyPath: m_text
-      value: Right Mouse Button Click to Move
+      value: Left Mouse Button Click to Move
       objectReference: {fileID: 0}
     - target: {fileID: 3555437357746918730, guid: b59c880c76cda7c409855aa5230530ec, type: 3}
       propertyPath: m_fontSize
@@ -202,6 +202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 272648787}
   - component: {fileID: 272648786}
+  - component: {fileID: 272648788}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -286,6 +287,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 60.195, y: -22.138, z: -8.294}
+--- !u!114 &272648788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272648785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &407394245
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,7 +572,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3555437357746918730, guid: b59c880c76cda7c409855aa5230530ec, type: 3}
       propertyPath: m_text
-      value: Use your light to guide lost souls
+      value: Sometimes you can manifest your light into lantern and throw it with
+        Right Mouse Button.
       objectReference: {fileID: 0}
     - target: {fileID: 3555437357746918730, guid: b59c880c76cda7c409855aa5230530ec, type: 3}
       propertyPath: m_fontSize
@@ -914,6 +936,26 @@ PrefabInstance:
     - target: {fileID: 822770197280619283, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232731391319759480, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232731391319759481, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232731391319759486, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232731391319759486, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232731391319759486, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.5294
       objectReference: {fileID: 0}
     - target: {fileID: 6616107625852864004, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_Name

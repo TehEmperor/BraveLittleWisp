@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,7 @@ public class Mover : MonoBehaviour
     [SerializeField] Animator myAnimator;
     [SerializeField] float speed;
 
+    public event Action OnMovementStart; 
     private void Awake()
     {
         myAgent = GetComponent<NavMeshAgent>();
@@ -20,6 +22,7 @@ public class Mover : MonoBehaviour
     }
     public void MoveTo(Vector3 destination, float speedOffset)
     {
+        OnMovementStart?.Invoke();
         myAgent.speed = speed * speedOffset;
         myAgent.destination = destination;        
                

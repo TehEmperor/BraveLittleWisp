@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     public static event Action onLastRights;
     private Health myHealth;
     private Mover myMover;
+    private PlayerInputReciever myReciever;
     private float yVelocity; //The y velocity of the player
     private Vector3 moveDirection;
     private CharacterController characterController;
@@ -35,6 +36,7 @@ public class PlayerController : MonoBehaviour
         myHealth.onDeath += LastRights;
         myMover = GetComponent<Mover>();
         animator = GetComponentInChildren<Animator>();
+        myReciever = GetComponent<PlayerInputReciever>();
         ResetThrowTrigger();
 
     }
@@ -50,7 +52,8 @@ public class PlayerController : MonoBehaviour
             onMouseClick.Invoke();
         }
         if (myHealth.CheckPulse() == false) return;
-
+        myMover.MoveTo(myReciever.nextPosition, speedMod);
+        
         //Optional mouse Scroll Wheel; 
         if (Input.GetAxis(Axis.SCROLL_WHEEL) < 0f)
         {
@@ -132,7 +135,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetMouseButton(0))
             {
-                myMover.MoveTo(target, speedMod);
+                //myMover.MoveTo(target, speedMod);
             }
 
             return true;

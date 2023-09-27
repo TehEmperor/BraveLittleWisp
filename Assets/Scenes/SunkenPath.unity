@@ -13188,6 +13188,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 301310739, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.8839989
+      objectReference: {fileID: 0}
+    - target: {fileID: 301310739, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.900002
+      objectReference: {fileID: 0}
     - target: {fileID: 822770197280619283, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -13231,6 +13239,14 @@ PrefabInstance:
     - target: {fileID: 822770197280619283, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4212827693177027268, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.8839989
+      objectReference: {fileID: 0}
+    - target: {fileID: 4212827693177027268, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.900002
       objectReference: {fileID: 0}
     - target: {fileID: 6616107625852864004, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_Name
@@ -22395,6 +22411,10 @@ PrefabInstance:
     - target: {fileID: 7796690560046774851, guid: 54fddb19a79a4404f97d6c84e1d9ce59, type: 3}
       propertyPath: m_Name
       value: SunkenPathTerrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 7796690560046774851, guid: 54fddb19a79a4404f97d6c84e1d9ce59, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7796690560046774851, guid: 54fddb19a79a4404f97d6c84e1d9ce59, type: 3}
       propertyPath: m_IsActive

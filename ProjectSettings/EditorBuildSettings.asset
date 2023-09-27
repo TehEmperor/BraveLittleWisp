@@ -35,4 +35,5 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/FuneralPyre.unity
     guid: 41cb14572d56cea40b1dd4dc6f153cbd
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: a1777c482d1515e46989929a2ceedc63, type: 2}

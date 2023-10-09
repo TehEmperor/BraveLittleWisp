@@ -52,7 +52,10 @@ public class PlayerController : MonoBehaviour
             onMouseClick.Invoke();
         }
         if (myHealth.CheckPulse() == false) return;
-        myMover.MoveTo(myReciever.nextPosition, speedMod);
+
+        //transform.position = myReciever.nextPosition;
+
+        //myMover.MoveTo(myReciever.nextPosition, speedMod);
         
         //Optional mouse Scroll Wheel; 
         if (Input.GetAxis(Axis.SCROLL_WHEEL) < 0f)
@@ -135,7 +138,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetMouseButton(0))
             {
-                //myMover.MoveTo(target, speedMod);
+                myMover.MoveTo(target, speedMod);
             }
 
             return true;

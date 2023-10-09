@@ -8,6 +8,7 @@ using System;
 public class Throw : MonoBehaviour
 {
     [SerializeField] PlayerLanternFollow myLantern;
+    [SerializeField] Transform lightFollowPoint;
     [SerializeField] Flash flashPrefab;
     [SerializeField] float minHealthToUse = 35f;
     [SerializeField] float healthCost = 25f;
@@ -28,14 +29,14 @@ public class Throw : MonoBehaviour
         if(myLantern)
         {
         myLantern.myThrow = this;
-        myLantern.followPoint = this.transform;
+        myLantern.followPoint = lightFollowPoint;
         }
     }
 
    
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Mouse1) && isThrowToggleOn)
+        if (Input.GetKeyUp(KeyCode.Mouse2) && isThrowToggleOn)
         {
             ThrowFlash(GetTarget(), CoolDown(), EnoughHealth());
         }

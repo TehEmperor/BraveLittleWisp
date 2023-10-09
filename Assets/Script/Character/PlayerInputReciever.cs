@@ -58,37 +58,40 @@ public class PlayerInputReciever : MonoBehaviour
 
     private void CameraRotation()
     {
-        cameraFollow.transform.rotation *= Quaternion.AngleAxis(_look.x * rotationPower, Vector3.up);
-        //cameraFollow.transform.rotation *= Quaternion.AngleAxis(_look.y * rotationPower, Vector3.right);
-
-        var angles = cameraFollow.transform.localEulerAngles;
-        angles.z = 0;
-        var angle = cameraFollow.transform.localEulerAngles.x;
-
-        //Clamp the Up/Down rotation
-        if (angle > 180 && angle < 340)
-        {
-            angles.x = 20;
-        }
-        else if (angle < 180 && angle > 40)
-        {
-            angles.x = 40;
-        }
-        cameraFollow.transform.localEulerAngles = angles;
-        nextRotation = Quaternion.Lerp(cameraFollow.transform.rotation, nextRotation, Time.deltaTime * rotationLerp);
+        
+        
 
         if (_move.x == 0 && _move.y == 0)
         {
             nextPosition = transform.position;
             
         }
-        float moveSpeed = speed;
+        float moveSpeed = speed/100;
         Vector3 position = (transform.forward * _move.y * moveSpeed) + (transform.right * _move.x * moveSpeed);
         nextPosition = transform.position + position;
 
         if(rmbValue > 0)
         {
-        transform.rotation = Quaternion.Euler(0, cameraFollow.transform.rotation.eulerAngles.y, 0);
+            cameraFollow.transform.rotation *= Quaternion.AngleAxis(_look.x * rotationPower, Vector3.up);
+            cameraFollow.transform.rotation *= Quaternion.AngleAxis(_look.y * rotationPower, Vector3.right);
+
+            var angles = cameraFollow.transform.localEulerAngles;
+            angles.z = 0;
+            var angle = cameraFollow.transform.localEulerAngles.x;
+
+            //Clamp the Up/Down rotation
+            if (angle > 0 && angle < 20)
+            {
+                angles.x = 20;
+            }
+            else if (angle < 180 && angle > 40)
+            {
+                angles.x = 40;
+            }
+            cameraFollow.transform.localEulerAngles = angles;
+            nextRotation = Quaternion.Lerp(cameraFollow.transform.rotation, nextRotation, Time.deltaTime * rotationLerp);
+            
+        //transform.rotation = Quaternion.Euler(0, cameraFollow.transform.rotation.eulerAngles.y, 0);
         }
         //cameraFollow.transform.localEulerAngles = new Vector3(angles.x, 0, 0);        
     }

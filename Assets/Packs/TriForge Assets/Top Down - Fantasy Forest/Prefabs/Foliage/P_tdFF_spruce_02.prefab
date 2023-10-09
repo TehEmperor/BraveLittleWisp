@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5059102381215754009}
   - component: {fileID: 5059102381212886841}
   - component: {fileID: 5059102381213984249}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spruce_2_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 5059102381215754011}
   - component: {fileID: 5059102381212886843}
   - component: {fileID: 5059102381213984251}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spruce_2_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 5059102381215754013}
   - component: {fileID: 5059102381230027709}
   - component: {fileID: 4917926959527030458}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: P_tdFF_spruce_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 5059102381215754015}
   - component: {fileID: 5059102381212886847}
   - component: {fileID: 5059102381213984255}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spruce_2_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

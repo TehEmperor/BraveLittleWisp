@@ -7,10 +7,13 @@ public class Health : MonoBehaviour
 {
     [SerializeField] AudioClip healSound;
     [SerializeField] float playerMaxHealth = 100f;
+    [SerializeField] float noHealInterval = 5f;
     //Serialized for debug!
     [SerializeField] float playerCurrentHealth;
     [SerializeField] float bonusHealth = 0f;
     bool isAlive = true;
+    bool noHeal = false;
+    float timeSinceLastDamage = 0;
 
     public event Action onDeath;
 
@@ -20,23 +23,39 @@ public class Health : MonoBehaviour
         isAlive = true;
     }
 
+
+    private void Update() 
+    {
+        timeSinceLastDamage += Time.deltaTime;
+        if(timeSinceLastDamage < noHealInterval)
+        {
+            if(!noHeal){noHeal = true;}
+            return;
+        }
+        if(noHeal) {noHeal = false;};
+        
+        
+    }
+
+
     public void GetDamaged(float dmg)
     {
-        if (isAlive)
+        if (!isAlive) return;
+    
+        timeSinceLastDamage = 0;
+        if(bonusHealth > 0)
         {
-            if(bonusHealth > 0)
-            {
-                float bhealthAfterDmg = Mathf.Clamp(bonusHealth - dmg, 0f, playerMaxHealth * 2);
-                bonusHealth = bhealthAfterDmg;
-                return;
-            }
-            float healthAfterDmg = Mathf.Clamp(playerCurrentHealth - dmg, 0f, playerMaxHealth);
-            playerCurrentHealth = healthAfterDmg;
-            if (playerCurrentHealth == 0)
-            {
-                Die();
-            }
+            float bhealthAfterDmg = Mathf.Clamp(bonusHealth - dmg, 0f, playerMaxHealth * 2);
+            bonusHealth = bhealthAfterDmg;
+            return;
         }
+        float healthAfterDmg = Mathf.Clamp(playerCurrentHealth - dmg, 0f, playerMaxHealth);
+        playerCurrentHealth = healthAfterDmg;
+        if (playerCurrentHealth == 0)
+        {
+            Die();
+        }
+    
     }
 
     public void OverchargeHealth(float amount)
@@ -68,8 +87,9 @@ public class Health : MonoBehaviour
         onDeath?.Invoke();
     }
 
-    internal void GetHealed(float heal)
+    public void GetHealed(float heal)
     {
+        if(noHeal) return;
         float healthAfterHeal = Mathf.Clamp(playerCurrentHealth + heal, 0f, playerMaxHealth);
         if (healthAfterHeal < playerMaxHealth)
         {

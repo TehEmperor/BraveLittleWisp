@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 154769979}
   - component: {fileID: 154769978}
   - component: {fileID: 154769977}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: GreatTreeTerrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ TerrainCollider:
   m_Material: {fileID: 0}
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: cede666c6011a454f8b951f1dda3bcb3, type: 2}
-  m_EnableTreeColliders: 1
+  m_EnableTreeColliders: 0
 --- !u!218 &154769978
 Terrain:
   m_ObjectHideFlags: 0
@@ -1765,6 +1765,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -16.9
       objectReference: {fileID: 0}
+    - target: {fileID: 1915921319, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: CameraCollisionFilter.m_Bits
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 822770197280619283, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -1840,6 +1844,10 @@ PrefabInstance:
     - target: {fileID: 4212827693177027268, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_LocalPosition.z
       value: -16.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508767954112682851, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: noHealInterval
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6616107625852864004, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_Name

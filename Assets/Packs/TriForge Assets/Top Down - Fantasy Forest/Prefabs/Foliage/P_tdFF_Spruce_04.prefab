@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5687835766199028324}
   - component: {fileID: 3026683474410037714}
   - component: {fileID: 5735671008980196569}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spruce_04(Clone) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 5007978893328405703}
   - component: {fileID: 909385936947905480}
   - component: {fileID: 4437150366942519206}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spruce_04(Clone) (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 2036915326721769447}
   - component: {fileID: 5037682828028816667}
   - component: {fileID: 1397172592517834189}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: P_tdFF_Spruce_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 1906984564984568059}
   - component: {fileID: 3182891769012170516}
   - component: {fileID: 8027018861640312631}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spruce_04(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

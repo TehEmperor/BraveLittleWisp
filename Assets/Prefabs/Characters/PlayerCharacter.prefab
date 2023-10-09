@@ -219,6 +219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healSound: {fileID: 8300000, guid: 7aa599b71a3e6a94e88aae8e9f075275, type: 3}
   playerMaxHealth: 100
+  noHealInterval: 2
   playerCurrentHealth: 0
   bonusHealth: 0
 --- !u!82 &2743672252612858399
@@ -413,11 +414,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myLantern: {fileID: 0}
+  lightFollowPoint: {fileID: 1530153453531106278}
   flashPrefab: {fileID: 4581170348500644808, guid: 6e5358ccb8e09c7289ac73223a077b06, type: 3}
   minHealthToUse: 35
   healthCost: 25
   throwDistance: 15
-  isThrowToggleOn: 0
+  isThrowToggleOn: 1
   coolDownPeriod: 2
 --- !u!1 &4020450447983735936
 GameObject:

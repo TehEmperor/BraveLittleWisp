@@ -9748,6 +9748,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3665427059649299751, guid: a07efb417c174c1489c6ca375cb8193d, type: 3}
+      propertyPath: m_Speed
+      value: 4.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3665427059649299756, guid: a07efb417c174c1489c6ca375cb8193d, type: 3}
       propertyPath: m_Radius
       value: 0.67658615
@@ -9913,6 +9917,5 @@ MonoBehaviour:
   healInterval: 3
   healPoint: 10
   isFollowing: 0
-  isEnemyFound: 0
   greetSound: {fileID: 8300000, guid: f494a7d898fd00c4f9dc39de7b387937, type: 3}
   ascendSound: {fileID: 8300000, guid: 97392e32e118c504d97262baa2325db9, type: 3}

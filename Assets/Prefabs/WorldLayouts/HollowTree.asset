@@ -20,4 +20,4 @@ MonoBehaviour:
   isDiscovered: 1
   isSpecial: 0
   levelSceneReference: GreatTree
-  soulsAquired: 3
+  soulsTrack: 0300000000000000

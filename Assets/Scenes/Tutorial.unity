@@ -180,9 +180,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3555437357746918730, guid: b59c880c76cda7c409855aa5230530ec, type: 3}
       propertyPath: m_text
-      value: 'RMB Click\Hold to move
+      value: 'LMB Click\Hold to move
 
-        LMB Hold to rotate camera'
+        RMB Hold to rotate camera'
       objectReference: {fileID: 0}
     - target: {fileID: 3555437357746918730, guid: b59c880c76cda7c409855aa5230530ec, type: 3}
       propertyPath: m_fontSize

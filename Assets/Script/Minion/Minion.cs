@@ -25,15 +25,16 @@ public class Minion : MonoBehaviour
     
     bool isAscending;
     private PlayerController player;
+    private Transform portal;
     GameObject enemy;
 
     private void Awake()
     {
         Enemie.OnEnemyDetection += EnemyPosition;
+        Portal.onPlayerWithinRange+= PortaPosition;
         myMover = GetComponent<Mover>();
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag(Tag.PLAYER).GetComponent<PlayerController>();
-        Portal.SoulCount();
     }
     private void Start()
     {
@@ -45,12 +46,14 @@ public class Minion : MonoBehaviour
     private void OnDisable()
     {
         Enemie.OnEnemyDetection -= EnemyPosition;
+        Portal.onPlayerWithinRange -=PortaPosition;
     }
 
     void Update()
     {
-        if(isAscending) return;
+        if(isAscending) return;        
         if(FleeEnemy()) return;
+        if(MoveToAscension()) return;
         FollowPlayer();
         
     }
@@ -58,8 +61,7 @@ public class Minion : MonoBehaviour
     bool BoolCheck(Vector3 pos1, Vector3 pos2)
     {
         var dist = Vector3.Distance(pos1, pos2);
-        if (dist <= player.GetLightRange()) return true;
-        return false;
+        return (dist <= player.GetLightRange());
     }
 
     void FollowPlayer()
@@ -97,6 +99,16 @@ public class Minion : MonoBehaviour
         }
         
 
+    }
+
+    private bool MoveToAscension()
+    {
+        if (!portal) return false;
+        if (!isFollowing) return false;
+        if(Vector3.Distance(portal.position, transform.position) > player.GetLightRange()) return false;
+        isAscending = true;
+        myMover.MoveTo(portal.position, 1.5f);
+        return true;
     }
 
 
@@ -138,7 +150,11 @@ public class Minion : MonoBehaviour
     {
         enemy = _enemy;
     }
-
+    
+    void PortaPosition(Transform pos)
+    {
+        portal =pos;
+    }
 
     void StartParticle()
     {
@@ -166,7 +182,6 @@ public class Minion : MonoBehaviour
         GetComponent<BoxCollider>().enabled = false;
         myMover.Cancel();
         GetComponent<AudioSource>().PlayOneShot(ascendSound);
-        isAscending = true;
         GetComponent<Animator>().SetTrigger("Ascend");        
     }
 

@@ -14,20 +14,27 @@ public class Portal : MonoBehaviour
     public float fadeInDuration = 1f;
     public int sceneToLoad = -1;
     public ParticleSystem[] fires;
-    static int soulsPresent = 0;
+    private int soulsPresent = 0;
     int soulsCollected;
     bool isActivated = false;
     GameObject player;
     public event Action onAllSoulsCollected;
-    
-    private void OnDisable() {
-        soulsPresent = 0;
-    }
+    public static event Action<Transform> onPlayerWithinRange;   
+      
     private void Start()
     {
+        soulsPresent = SoulsRquiredToActivateCount();
         fires =  SpawnColumns(fireColumnPrefab,soulsPresent);
-        HushFires(isActivated);    
-                
+        HushFires(isActivated);                    
+    }
+
+    private int SoulsRquiredToActivateCount()
+    {
+        if(myLevel) {return myLevel.GetSoulsToActivate();}      
+        int var = FindObjectsOfType<Minion>().Length;
+        if(var == 0) return 1;
+        return var;
+
     }
 
     public void SetLevel(Level level)
@@ -67,8 +74,7 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.CompareTag(Tag.COLLECTABLE))
-        {            
-            print(soulsCollected);
+        {   
             LitColumn();
             other.gameObject.GetComponent<Minion>().StartTheAscention(); // this is where we should activate any possible animations for when we bring souls.
             soulsCollected++;
@@ -81,6 +87,7 @@ public class Portal : MonoBehaviour
 
         else if (other.gameObject.CompareTag(Tag.PLAYER))
         {
+            onPlayerWithinRange?.Invoke(this.transform);
             player = other.gameObject;
             if(!isActivated) return;
             soulsPresent = 0;
@@ -111,13 +118,8 @@ public class Portal : MonoBehaviour
     public void ActivateSecret(bool onoff)
     {
         isSecret = onoff;
-    }
+    }   
     
-    public static void SoulCount()
-    {
-        soulsPresent++;
-        print(soulsPresent);
-    }
 
     public ParticleSystem[] SpawnColumns(GameObject columnPrefab, int amount)
     {

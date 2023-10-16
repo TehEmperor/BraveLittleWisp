@@ -20,4 +20,4 @@ MonoBehaviour:
   isDiscovered: 0
   isSpecial: 1
   levelSceneReference: TheAbyss
-  soulsAquired: 5
+  soulsTrack: 0400000000000000

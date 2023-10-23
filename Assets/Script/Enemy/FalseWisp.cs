@@ -26,7 +26,7 @@ public class FalseWisp : MonoBehaviour
     private void Awake() 
     {
         myMover = GetComponent<Mover>();
-        chaseDistance = GetComponent<SphereCollider>().radius - 2;
+        chaseDistance = GetComponent<SphereCollider>().radius/2;
     }
 
 

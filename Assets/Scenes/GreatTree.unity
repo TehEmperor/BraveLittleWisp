@@ -1765,14 +1765,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -16.9
       objectReference: {fileID: 0}
-    - target: {fileID: 301310740, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
-      propertyPath: m_Lens.FarClipPlane
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 301310740, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
-      propertyPath: m_Lens.NearClipPlane
-      value: 0.4
-      objectReference: {fileID: 0}
     - target: {fileID: 1915921319, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: CameraCollisionFilter.m_Bits
       value: 17

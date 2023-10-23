@@ -6,11 +6,15 @@ using UnityEngine.AI;
 
 public class Fish : MonoBehaviour
 {
+    [Header("Patroling")]
+    [SerializeField] PatrolPath myPath;
+    [Header("Random")]
     [SerializeField] float swimRange;
     [SerializeField] float ySwimRange;
     [SerializeField] float roamTolerance;
     [SerializeField] float dwellDuration = 1f;
     [SerializeField] float speedMod;
+    int wpIndex = 0;
     float timeSinceReachedDest = 0;
     Vector3 nextDest;
     Vector3 origin;
@@ -18,8 +22,8 @@ public class Fish : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {        
-        myMover = GetComponent<Mover>();
+    {   myMover = GetComponent<Mover>();
+        if(myPath == null) return;
         nextDest = GenerateRoamPoint();
         origin = transform.position;
     }
@@ -38,6 +42,16 @@ public class Fish : MonoBehaviour
 
     private void SwimAround()
     {
+        if(myPath != null)
+        {
+            PathSwim();
+            if (timeSinceReachedDest > dwellDuration)
+            {
+                myMover.MoveTo(nextDest, speedMod);
+            }
+
+        }
+
         if(ySwimRange - transform.position.y <= roamTolerance)
         {
             nextDest = origin;
@@ -53,6 +67,30 @@ public class Fish : MonoBehaviour
         }
 
     }
+
+    private void PathSwim()
+    {
+        if (AtDestination(GetCurrentWaypoint()))
+        {
+            timeSinceReachedDest = 0;
+            CycleWaipoint();
+        }
+        nextDest = GetCurrentWaypoint();        
+    }
+
+    private Vector3 GetCurrentWaypoint()
+    {
+        return myPath.GetWayPoint(wpIndex).position;
+    }
+
+    private void CycleWaipoint()
+    {
+        {
+            wpIndex = myPath.GetNextIndex(wpIndex);
+        }
+
+    }
+    
 
     private bool AtDestination(Vector3 dest)
     {

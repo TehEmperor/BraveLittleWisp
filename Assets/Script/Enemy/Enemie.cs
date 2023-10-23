@@ -9,6 +9,7 @@ public class Enemie : MonoBehaviour
     [SerializeField] AudioClip discoverPlayerClip;
     [SerializeField] AudioClip suckLightClip;
     [SerializeField] GameObject currentDistraction = null;
+    [SerializeField] Minion minionPrefab;
     Vector3 originPosition;
     Vector3 roamToPosition = Vector3.zero;
     float speedOffset = 1f;
@@ -101,11 +102,11 @@ public class Enemie : MonoBehaviour
         yield return new WaitForSeconds(UnityEngine.Random.Range(2f, 4f));
         isOperational = false;
         GetComponent<Animator>().Play("CleansedByFlame");
-
     }
 
     void GetDestroyed()
     {
+        Instantiate(minionPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 

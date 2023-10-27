@@ -7,10 +7,13 @@ public class PyreController : MonoBehaviour
 {  
     [SerializeField] float overchargeIntensity = 1f;
     [SerializeField] GameObject postProcess;
+    [SerializeField] Color newEnvironmentColor;
     PlayerController player;
     Portal myPortal;
+    BurningSkull[] myScull;
     Enemie[] enemiesPresent;
     [SerializeField] ParticleSystem[] pyreEffects;
+    int burnedOfferings = 0;
     
 
     private void Start() 
@@ -52,7 +55,11 @@ public class PyreController : MonoBehaviour
         player = FindObjectOfType<PlayerController>();   
         enemiesPresent = FindObjectsOfType<Enemie>();     
         myPortal = FindObjectOfType<Portal>();
-        myPortal.onAllSoulsCollected += Burn;
+        myScull = FindObjectsOfType<BurningSkull>();
+        foreach (var scull in myScull)
+        {
+            scull.onBrazerReached+=BurnCounter;            
+        }
         FXControl(false);
     }
 
@@ -69,9 +76,19 @@ public class PyreController : MonoBehaviour
         }
     }
 
+    private void BurnCounter()
+    {
+        burnedOfferings+=1;
+        if(burnedOfferings>= myScull.Length)
+        {
+            Burn();
+        }
+    }
+
     private void Burn()
     {
         FXControl(true);
+        RenderSettings.ambientLight = newEnvironmentColor;
         GetComponent<Collider>().enabled = true;
         postProcess.SetActive(true);
     }

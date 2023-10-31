@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1037315075081968742}
   - component: {fileID: 1037315075081968745}
   - component: {fileID: 1037315075081968741}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Ember
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,5 +111,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeDuration: 4
-  emissionColor: {r: 1, g: 0, b: 0, a: 1}
+  emissionColor: {r: 0.6792453, g: 0.009611944, b: 0.009611944, a: 1}
   maxIntencity: 4

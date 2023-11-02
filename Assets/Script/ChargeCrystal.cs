@@ -9,14 +9,20 @@ public class ChargeCrystal : MonoBehaviour
     [SerializeField] float currentCharge = 0;
     [SerializeField] float chargeSpeed = 1f;
     [SerializeField] float depletionDistance = 5f;
+    [SerializeField] Material emittingMat;
     [SerializeField] Color emissionColor = Color.cyan;
     [SerializeField] GameObject objToMelt = null;
     [SerializeField] Material rayMat;    
     [SerializeField] bool isFull = false;
+    [SerializeField] bool isRotating = true;
+    [SerializeField] float rotSpeed = 1f;
 
     public event Action onFullCharge;
     public event Action onFullDepletion;
-    private void Start() {
+    private void Start()
+    {
+        StartCoroutine(FloatRoutine());
+        if(emittingMat == null) {emittingMat = GetComponent<Renderer>().material;}
         if(isFull)
         {
             currentCharge = maxCharge;
@@ -92,6 +98,8 @@ public class ChargeCrystal : MonoBehaviour
             }
         }
 
+
+
     }
 
     private void ChargeTrigger()
@@ -132,6 +140,15 @@ public class ChargeCrystal : MonoBehaviour
 
     private void SetEmissionIntencity()
     {
-        GetComponent<Renderer>().material.SetColor("_EmissionColor", emissionColor * (currentCharge/100));
+        emittingMat.SetColor("_EmissionColor", emissionColor * (currentCharge/100));
+    }
+
+    private IEnumerator FloatRoutine()
+    {
+        while(isRotating)
+        {
+            transform.Rotate(new Vector3(0,1,0) * rotSpeed, Space.Self);
+            yield return new WaitForFixedUpdate();
+        }
     }
 }

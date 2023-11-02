@@ -22,14 +22,21 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Dissolve
   m_Shader: {fileID: -6465566751694194690, guid: dfac85d87401eec4d8c3e68d55220654, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
+  m_ValidKeywords:
+  - _ALPHATEST_ON
+  - _RECEIVE_SHADOWS_OFF
+  - _SURFACE_TYPE_TRANSPARENT
+  m_InvalidKeywords:
+  - _ALPHAMODULATE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses:
+  - DepthOnly
+  - SHADOWCASTER
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -70,7 +77,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture:
-        m_Texture: {fileID: 2800000, guid: e53001c6fcc7c0f48b421b5aad8226f1, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1b13dc101cf2ac7418019fd776161658, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -87,15 +94,19 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AlphaClip: 1
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
+    - _Blend: 3
     - _BumpScale: 1
+    - _CastShadows: 0
+    - _Cull: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DissolveSpeed: 2
+    - _DissolveSpeed: 2.32
     - _DissolveTrigger: 9999
     - _DstBlend: 0
-    - _EdgeSize: 0.1
+    - _EdgeSize: -0.03
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -105,14 +116,19 @@ Material:
     - _Parallax: 0.02
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _ReceiveShadows: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _SrcBlend: 1
+    - _SrcBlend: 2
+    - _Surface: 1
     - _UVSec: 0
-    - _ZWrite: 1
+    - _WorkflowMode: 1
+    - _ZTest: 4
+    - _ZWrite: 0
+    - _ZWriteControl: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EdgeColor: {r: 0.1724368, g: 0.25258893, b: 0.2924528, a: 0.7921569}
+    - _EdgeColor: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &3223386214940697423

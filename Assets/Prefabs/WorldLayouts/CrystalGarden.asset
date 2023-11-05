@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c5bfd72db656ca4fb8db45e42bdcea0, type: 3}
   m_Name: CrystalGarden
   m_EditorClassIdentifier: 
-  previousLevels: []
-  nextLevels: []
+  previousLevels:
+  - {fileID: 11400000, guid: 497659275ef39374b995376794cf8a98, type: 2}
+  nextLevels:
+  - {fileID: 11400000, guid: a7b2ead393f821142b7c3e1f08f63d55, type: 2}
   isFinished: 0
   isDiscovered: 0
   isSpecial: 0
   levelSceneReference: CrystalGarden
-  soulsAquired: 0
+  soulsTrack: 0400000000000000

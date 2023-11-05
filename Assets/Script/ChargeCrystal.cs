@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class ChargeCrystal : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class ChargeCrystal : MonoBehaviour
     private void Start()
     {
         StartCoroutine(FloatRoutine());
-        if(emittingMat == null) {emittingMat = GetComponent<Renderer>().material;}
+        emittingMat = SearchEmittingMaterial();
         if(isFull)
         {
             currentCharge = maxCharge;
@@ -140,6 +141,7 @@ public class ChargeCrystal : MonoBehaviour
 
     private void SetEmissionIntencity()
     {
+        if(emittingMat == null) return;
         emittingMat.SetColor("_EmissionColor", emissionColor * (currentCharge/100));
     }
 
@@ -150,5 +152,16 @@ public class ChargeCrystal : MonoBehaviour
             transform.Rotate(new Vector3(0,1,0) * rotSpeed, Space.Self);
             yield return new WaitForFixedUpdate();
         }
+    }
+
+    private Material SearchEmittingMaterial()
+    {
+       Material[] mats =  GetComponent<Renderer>().materials;
+       foreach (var mat in mats)
+       {
+        if(!mat.IsKeywordEnabled("_EMISSION")) continue;
+        return mat;
+       }
+       return null;
     }
 }

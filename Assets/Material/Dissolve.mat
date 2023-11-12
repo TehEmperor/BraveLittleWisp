@@ -106,7 +106,7 @@ Material:
     - _DissolveSpeed: 2.32
     - _DissolveTrigger: 9999
     - _DstBlend: 0
-    - _EdgeSize: -0.03
+    - _EdgeSize: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1

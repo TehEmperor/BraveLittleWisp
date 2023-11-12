@@ -48,7 +48,7 @@ public class Enemie : MonoBehaviour
         }
         else if(other.gameObject.CompareTag(Tag.FlASH))
         {
-            print("here");
+            print(other.gameObject.name);
             currentDistraction = other.gameObject;
         }
 
@@ -101,12 +101,16 @@ public class Enemie : MonoBehaviour
     {
         yield return new WaitForSeconds(UnityEngine.Random.Range(2f, 4f));
         isOperational = false;
-        GetComponent<Animator>().Play("CleansedByFlame");
+        GetComponent<Animator>().Play("CleansedByFlame");       
+    }
+
+    void MinionSpawn()
+    {
+        Instantiate(minionPrefab, transform.position, Quaternion.identity);
     }
 
     void GetDestroyed()
-    {
-        Instantiate(minionPrefab, transform.position, Quaternion.identity);
+    {        
         Destroy(gameObject);
     }
 

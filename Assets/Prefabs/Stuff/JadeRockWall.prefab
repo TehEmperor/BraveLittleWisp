@@ -1,0 +1,852 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1124605501122877523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1124605501122877484}
+  m_Layer: 0
+  m_Name: JadeRockWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1124605501122877484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124605501122877523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 169, y: 0, z: 33}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8564315007716725367}
+  - {fileID: 8937904619012424008}
+  - {fileID: 5413124062791152953}
+  - {fileID: 2433877323161390684}
+  - {fileID: 2638730487443858908}
+  - {fileID: 9127799649774635815}
+  - {fileID: 4832904244421859332}
+  - {fileID: 8885958838822396995}
+  - {fileID: 1492732187688025119}
+  - {fileID: 5408604476041710273}
+  - {fileID: 4929601783529526102}
+  - {fileID: 965595072905030826}
+  - {fileID: 2433877323021013314}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1124605500368120174
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1124605501122877484}
+    m_Modifications:
+    - target: {fileID: 8158011055958883945, guid: effd14bc2ae6df142a2953d642644f73, type: 3}
+      propertyPath: m_Name
+      value: Rock_Medium_Gem_Jade_Emerald_Spike_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158011055958975049, guid: effd14bc2ae6df142a2953d642644f73, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158011055958975049, guid: effd14bc2ae6df142a2953d642644f73, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158011055958975049, guid: effd14bc2ae6df142a2953d642644f73, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158011055958975049, guid: effd14bc2ae6df142a2953d642644f73, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158011055958975049, guid: effd14bc2ae6df142a2953d642644f73, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158011055958975049, guid: effd14bc2ae6df142a2953d642644f73, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158011055958975049, guid: effd14bc2ae6df142a2953d642644f73, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158011055958975049, guid: effd14bc2ae6df142a2953d642644f73, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158011055958975049, guid: effd14bc2ae6df142a2953d642644f73, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158011055958975049, guid: effd14bc2ae6df142a2953d642644f73, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158011055958975049, guid: effd14bc2ae6df142a2953d642644f73, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: effd14bc2ae6df142a2953d642644f73, type: 3}
+--- !u!4 &9127799649774635815 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8158011055958975049, guid: effd14bc2ae6df142a2953d642644f73, type: 3}
+  m_PrefabInstance: {fileID: 1124605500368120174}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1124605500461477605
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1124605501122877484}
+    m_Modifications:
+    - target: {fileID: 3341029054581750937, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_Name
+      value: Rock_Large_Gem_Jade_Emerald_Spike_Cluster_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+--- !u!4 &2433877323161390684 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+  m_PrefabInstance: {fileID: 1124605500461477605}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1124605500589535739
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1124605501122877484}
+    m_Modifications:
+    - target: {fileID: 3341029054581750937, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_Name
+      value: Rock_Large_Gem_Jade_Emerald_Spike_Cluster_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.37326956
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+--- !u!4 &2433877323021013314 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3341029054581907641, guid: 3712b64dfe02cc740b43da7b85aa2e12, type: 3}
+  m_PrefabInstance: {fileID: 1124605500589535739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1124605500708150476
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1124605501122877484}
+    m_Modifications:
+    - target: {fileID: 5515372921873324264, guid: ec7c0927f8acb074da66b0baae46c430, type: 3}
+      propertyPath: m_Name
+      value: Rock_Medium_Gem_Jade_Emerald_Spike_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515372921873679560, guid: ec7c0927f8acb074da66b0baae46c430, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515372921873679560, guid: ec7c0927f8acb074da66b0baae46c430, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515372921873679560, guid: ec7c0927f8acb074da66b0baae46c430, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515372921873679560, guid: ec7c0927f8acb074da66b0baae46c430, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515372921873679560, guid: ec7c0927f8acb074da66b0baae46c430, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515372921873679560, guid: ec7c0927f8acb074da66b0baae46c430, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515372921873679560, guid: ec7c0927f8acb074da66b0baae46c430, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515372921873679560, guid: ec7c0927f8acb074da66b0baae46c430, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515372921873679560, guid: ec7c0927f8acb074da66b0baae46c430, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515372921873679560, guid: ec7c0927f8acb074da66b0baae46c430, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515372921873679560, guid: ec7c0927f8acb074da66b0baae46c430, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ec7c0927f8acb074da66b0baae46c430, type: 3}
+--- !u!4 &4832904244421859332 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5515372921873679560, guid: ec7c0927f8acb074da66b0baae46c430, type: 3}
+  m_PrefabInstance: {fileID: 1124605500708150476}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1124605500747073678
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1124605501122877484}
+    m_Modifications:
+    - target: {fileID: 5472454135281490904, guid: 76288b99cbc574a4d80cc497a2849837, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472454135281490904, guid: 76288b99cbc574a4d80cc497a2849837, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472454135281490904, guid: 76288b99cbc574a4d80cc497a2849837, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472454135281490904, guid: 76288b99cbc574a4d80cc497a2849837, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472454135281490904, guid: 76288b99cbc574a4d80cc497a2849837, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472454135281490904, guid: 76288b99cbc574a4d80cc497a2849837, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472454135281490904, guid: 76288b99cbc574a4d80cc497a2849837, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472454135281490904, guid: 76288b99cbc574a4d80cc497a2849837, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472454135281490904, guid: 76288b99cbc574a4d80cc497a2849837, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472454135281490904, guid: 76288b99cbc574a4d80cc497a2849837, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472454135281490904, guid: 76288b99cbc574a4d80cc497a2849837, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472454135281715192, guid: 76288b99cbc574a4d80cc497a2849837, type: 3}
+      propertyPath: m_Name
+      value: Rock_Medium_Gem_Jade_Emerald_Spike_06
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 76288b99cbc574a4d80cc497a2849837, type: 3}
+--- !u!4 &4929601783529526102 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5472454135281490904, guid: 76288b99cbc574a4d80cc497a2849837, type: 3}
+  m_PrefabInstance: {fileID: 1124605500747073678}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1124605501574697058
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1124605501122877484}
+    m_Modifications:
+    - target: {fileID: 3100097065323787710, guid: 650570d62b91f994982e6822a0fbd9c2, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100097065323787710, guid: 650570d62b91f994982e6822a0fbd9c2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100097065323787710, guid: 650570d62b91f994982e6822a0fbd9c2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100097065323787710, guid: 650570d62b91f994982e6822a0fbd9c2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100097065323787710, guid: 650570d62b91f994982e6822a0fbd9c2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100097065323787710, guid: 650570d62b91f994982e6822a0fbd9c2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100097065323787710, guid: 650570d62b91f994982e6822a0fbd9c2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100097065323787710, guid: 650570d62b91f994982e6822a0fbd9c2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100097065323787710, guid: 650570d62b91f994982e6822a0fbd9c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100097065323787710, guid: 650570d62b91f994982e6822a0fbd9c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100097065323787710, guid: 650570d62b91f994982e6822a0fbd9c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100097065323948446, guid: 650570d62b91f994982e6822a0fbd9c2, type: 3}
+      propertyPath: m_Name
+      value: Rock_Large_Gem_Jade_Emerald_Spike_Cluster_03
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 650570d62b91f994982e6822a0fbd9c2, type: 3}
+--- !u!4 &2638730487443858908 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3100097065323787710, guid: 650570d62b91f994982e6822a0fbd9c2, type: 3}
+  m_PrefabInstance: {fileID: 1124605501574697058}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1124605501701945980
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1124605501122877484}
+    m_Modifications:
+    - target: {fileID: 1957982522038765155, guid: b2e246a1d8c42f24b9c9ed373a4f617a, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957982522038765155, guid: b2e246a1d8c42f24b9c9ed373a4f617a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957982522038765155, guid: b2e246a1d8c42f24b9c9ed373a4f617a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957982522038765155, guid: b2e246a1d8c42f24b9c9ed373a4f617a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957982522038765155, guid: b2e246a1d8c42f24b9c9ed373a4f617a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957982522038765155, guid: b2e246a1d8c42f24b9c9ed373a4f617a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957982522038765155, guid: b2e246a1d8c42f24b9c9ed373a4f617a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957982522038765155, guid: b2e246a1d8c42f24b9c9ed373a4f617a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957982522038765155, guid: b2e246a1d8c42f24b9c9ed373a4f617a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957982522038765155, guid: b2e246a1d8c42f24b9c9ed373a4f617a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957982522038765155, guid: b2e246a1d8c42f24b9c9ed373a4f617a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957982522038868547, guid: b2e246a1d8c42f24b9c9ed373a4f617a, type: 3}
+      propertyPath: m_Name
+      value: Rock_Medium_Gem_Jade_Emerald_Spike_04
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b2e246a1d8c42f24b9c9ed373a4f617a, type: 3}
+--- !u!4 &1492732187688025119 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1957982522038765155, guid: b2e246a1d8c42f24b9c9ed373a4f617a, type: 3}
+  m_PrefabInstance: {fileID: 1124605501701945980}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1124605501799121949
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1124605501122877484}
+    m_Modifications:
+    - target: {fileID: 4941679847939378908, guid: 2ff92d1c8f4130246a1a6f21d13e1ffe, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941679847939378908, guid: 2ff92d1c8f4130246a1a6f21d13e1ffe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941679847939378908, guid: 2ff92d1c8f4130246a1a6f21d13e1ffe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941679847939378908, guid: 2ff92d1c8f4130246a1a6f21d13e1ffe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941679847939378908, guid: 2ff92d1c8f4130246a1a6f21d13e1ffe, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941679847939378908, guid: 2ff92d1c8f4130246a1a6f21d13e1ffe, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941679847939378908, guid: 2ff92d1c8f4130246a1a6f21d13e1ffe, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941679847939378908, guid: 2ff92d1c8f4130246a1a6f21d13e1ffe, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941679847939378908, guid: 2ff92d1c8f4130246a1a6f21d13e1ffe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941679847939378908, guid: 2ff92d1c8f4130246a1a6f21d13e1ffe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941679847939378908, guid: 2ff92d1c8f4130246a1a6f21d13e1ffe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941679847939609340, guid: 2ff92d1c8f4130246a1a6f21d13e1ffe, type: 3}
+      propertyPath: m_Name
+      value: Rock_Medium_Gem_Jade_Emerald_Spike_05
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2ff92d1c8f4130246a1a6f21d13e1ffe, type: 3}
+--- !u!4 &5408604476041710273 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4941679847939378908, guid: 2ff92d1c8f4130246a1a6f21d13e1ffe, type: 3}
+  m_PrefabInstance: {fileID: 1124605501799121949}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1124605502050980458
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1124605501122877484}
+    m_Modifications:
+    - target: {fileID: 8415577083382773289, guid: 7a9459ed9c8e9b14b9b0a7635bfda2bf, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8415577083382773289, guid: 7a9459ed9c8e9b14b9b0a7635bfda2bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8415577083382773289, guid: 7a9459ed9c8e9b14b9b0a7635bfda2bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8415577083382773289, guid: 7a9459ed9c8e9b14b9b0a7635bfda2bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8415577083382773289, guid: 7a9459ed9c8e9b14b9b0a7635bfda2bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8415577083382773289, guid: 7a9459ed9c8e9b14b9b0a7635bfda2bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8415577083382773289, guid: 7a9459ed9c8e9b14b9b0a7635bfda2bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8415577083382773289, guid: 7a9459ed9c8e9b14b9b0a7635bfda2bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8415577083382773289, guid: 7a9459ed9c8e9b14b9b0a7635bfda2bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8415577083382773289, guid: 7a9459ed9c8e9b14b9b0a7635bfda2bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8415577083382773289, guid: 7a9459ed9c8e9b14b9b0a7635bfda2bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8415577083382934025, guid: 7a9459ed9c8e9b14b9b0a7635bfda2bf, type: 3}
+      propertyPath: m_Name
+      value: Rock_Medium_Gem_Jade_Emerald_Spike_03
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a9459ed9c8e9b14b9b0a7635bfda2bf, type: 3}
+--- !u!4 &8885958838822396995 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8415577083382773289, guid: 7a9459ed9c8e9b14b9b0a7635bfda2bf, type: 3}
+  m_PrefabInstance: {fileID: 1124605502050980458}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1124605502106376237
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1124605501122877484}
+    m_Modifications:
+    - target: {fileID: 4937107484344659220, guid: f14f90cc7d1b9f548b9d997b2e300354, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937107484344659220, guid: f14f90cc7d1b9f548b9d997b2e300354, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937107484344659220, guid: f14f90cc7d1b9f548b9d997b2e300354, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937107484344659220, guid: f14f90cc7d1b9f548b9d997b2e300354, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937107484344659220, guid: f14f90cc7d1b9f548b9d997b2e300354, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937107484344659220, guid: f14f90cc7d1b9f548b9d997b2e300354, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937107484344659220, guid: f14f90cc7d1b9f548b9d997b2e300354, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937107484344659220, guid: f14f90cc7d1b9f548b9d997b2e300354, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937107484344659220, guid: f14f90cc7d1b9f548b9d997b2e300354, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937107484344659220, guid: f14f90cc7d1b9f548b9d997b2e300354, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937107484344659220, guid: f14f90cc7d1b9f548b9d997b2e300354, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937107484345020724, guid: f14f90cc7d1b9f548b9d997b2e300354, type: 3}
+      propertyPath: m_Name
+      value: Rock_Large_Gem_Jade_Emerald_Spike_Cluster_01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f14f90cc7d1b9f548b9d997b2e300354, type: 3}
+--- !u!4 &5413124062791152953 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4937107484344659220, guid: f14f90cc7d1b9f548b9d997b2e300354, type: 3}
+  m_PrefabInstance: {fileID: 1124605502106376237}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1124605502306072380
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1124605501122877484}
+    m_Modifications:
+    - target: {fileID: 8327919165770315380, guid: c65dd28e4d740f24ca875cd81bf1d70d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327919165770315380, guid: c65dd28e4d740f24ca875cd81bf1d70d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327919165770315380, guid: c65dd28e4d740f24ca875cd81bf1d70d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327919165770315380, guid: c65dd28e4d740f24ca875cd81bf1d70d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327919165770315380, guid: c65dd28e4d740f24ca875cd81bf1d70d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327919165770315380, guid: c65dd28e4d740f24ca875cd81bf1d70d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327919165770315380, guid: c65dd28e4d740f24ca875cd81bf1d70d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327919165770315380, guid: c65dd28e4d740f24ca875cd81bf1d70d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327919165770315380, guid: c65dd28e4d740f24ca875cd81bf1d70d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327919165770315380, guid: c65dd28e4d740f24ca875cd81bf1d70d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327919165770315380, guid: c65dd28e4d740f24ca875cd81bf1d70d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327919165770803796, guid: c65dd28e4d740f24ca875cd81bf1d70d, type: 3}
+      propertyPath: m_Name
+      value: Rock_Large_Gem_Jade_Emerald_Spike_02
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c65dd28e4d740f24ca875cd81bf1d70d, type: 3}
+--- !u!4 &8937904619012424008 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8327919165770315380, guid: c65dd28e4d740f24ca875cd81bf1d70d, type: 3}
+  m_PrefabInstance: {fileID: 1124605502306072380}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1124605502357156324
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1124605501122877484}
+    m_Modifications:
+    - target: {fileID: 8737521631048639379, guid: 615bf1783b88d0b4492a2c7afc945aac, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737521631048639379, guid: 615bf1783b88d0b4492a2c7afc945aac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737521631048639379, guid: 615bf1783b88d0b4492a2c7afc945aac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737521631048639379, guid: 615bf1783b88d0b4492a2c7afc945aac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737521631048639379, guid: 615bf1783b88d0b4492a2c7afc945aac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737521631048639379, guid: 615bf1783b88d0b4492a2c7afc945aac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737521631048639379, guid: 615bf1783b88d0b4492a2c7afc945aac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737521631048639379, guid: 615bf1783b88d0b4492a2c7afc945aac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737521631048639379, guid: 615bf1783b88d0b4492a2c7afc945aac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737521631048639379, guid: 615bf1783b88d0b4492a2c7afc945aac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737521631048639379, guid: 615bf1783b88d0b4492a2c7afc945aac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737521631048875955, guid: 615bf1783b88d0b4492a2c7afc945aac, type: 3}
+      propertyPath: m_Name
+      value: Rock_Large_Gem_Jade_Emerald_Spike_01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 615bf1783b88d0b4492a2c7afc945aac, type: 3}
+--- !u!4 &8564315007716725367 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8737521631048639379, guid: 615bf1783b88d0b4492a2c7afc945aac, type: 3}
+  m_PrefabInstance: {fileID: 1124605502357156324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1124605502465960831
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1124605501122877484}
+    m_Modifications:
+    - target: {fileID: 215360400520234965, guid: 99964b8defa33bf44892493bfba93500, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 215360400520234965, guid: 99964b8defa33bf44892493bfba93500, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 215360400520234965, guid: 99964b8defa33bf44892493bfba93500, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 215360400520234965, guid: 99964b8defa33bf44892493bfba93500, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 215360400520234965, guid: 99964b8defa33bf44892493bfba93500, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 215360400520234965, guid: 99964b8defa33bf44892493bfba93500, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 215360400520234965, guid: 99964b8defa33bf44892493bfba93500, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 215360400520234965, guid: 99964b8defa33bf44892493bfba93500, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 215360400520234965, guid: 99964b8defa33bf44892493bfba93500, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 215360400520234965, guid: 99964b8defa33bf44892493bfba93500, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 215360400520234965, guid: 99964b8defa33bf44892493bfba93500, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 215360400520535029, guid: 99964b8defa33bf44892493bfba93500, type: 3}
+      propertyPath: m_Name
+      value: Rock_Medium_Gem_Jade_Emerald_Spike_07
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 99964b8defa33bf44892493bfba93500, type: 3}
+--- !u!4 &965595072905030826 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 215360400520234965, guid: 99964b8defa33bf44892493bfba93500, type: 3}
+  m_PrefabInstance: {fileID: 1124605502465960831}
+  m_PrefabAsset: {fileID: 0}

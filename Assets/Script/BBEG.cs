@@ -15,7 +15,9 @@ public class BBEG : MonoBehaviour
     [SerializeField] ChargeCrystal canon;
     [SerializeField] Transform[] phaseTwoMinionSpawns;
     [SerializeField] Minion minionPrefab;
-    List<Enemie> enemiesPresent = new List<Enemie>();
+    [SerializeField] Transform crystalMass;
+    [SerializeField] float crystalrevialinterval = 0.2f;
+     List<Enemie> enemiesPresent = new List<Enemie>();
     float timeSinceLastThrow = 0f;
     float timeSinceLastPPUpdate = 0f;
     float timeSinceLastCorruption = 0f;
@@ -39,6 +41,7 @@ public class BBEG : MonoBehaviour
         target = GameObject.FindWithTag("Player");      
         state = startState;
         canon.onFullCharge+=GetRekt;
+        StartCoroutine(CrystalsGrowth(true));
     }
 
 
@@ -186,6 +189,15 @@ public class BBEG : MonoBehaviour
 
     }
 
+    IEnumerator CrystalsGrowth(bool onoff)
+    {
+        for (int i = 0; i < crystalMass.childCount; i++)
+        {
+            crystalMass.GetChild(i).gameObject.SetActive(onoff);
+            yield return new WaitForSeconds(crystalrevialinterval);            
+        }
+
+    }
 
     private void ModifyCorruptionIntencity()
     {

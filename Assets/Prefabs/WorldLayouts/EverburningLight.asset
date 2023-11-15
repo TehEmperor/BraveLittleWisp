@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c5bfd72db656ca4fb8db45e42bdcea0, type: 3}
   m_Name: EverburningLight
   m_EditorClassIdentifier: 
-  previousLevels: []
-  nextLevels: []
+  previousLevels:
+  - {fileID: 11400000, guid: ff7d22e61443b9d43a6e92732ff43dc2, type: 2}
+  nextLevels:
+  - {fileID: 11400000, guid: 9d874a460ce9c4d43bdc50d6a19d5b9c, type: 2}
   isFinished: 0
   isDiscovered: 1
   isSpecial: 0
   levelSceneReference: 
-  soulsAquired: 0
+  soulsTrack: 0500000000000000

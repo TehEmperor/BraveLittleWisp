@@ -15,6 +15,7 @@ public class BossEmber : MonoBehaviour
     private Vector3 target;
 
     public event Action<Enemie> onEnemieSpawn;
+    public event Action onDestroy;
 
     private void Start()
     {
@@ -48,15 +49,24 @@ public class BossEmber : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Enemie"))
-        {
-            return;
-        }
-        else if(other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Ground"))
+       if(other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Ground"))
         {
             SpawnEnemie();
-        }        
+        }
+        else DestroySelf(); 
 
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Flameable")) return;
+        DestroySelf();
+
+    }
+
+    private void DestroySelf()
+    {
+        onDestroy?.Invoke();
+        Destroy(gameObject);
     }
 
     private void SpawnEnemie()

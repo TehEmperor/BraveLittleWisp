@@ -5,6 +5,7 @@ using UnityEngine;
 public class MeltingBlock : MonoBehaviour
 {
    [SerializeField] ChargeCrystal[] crystals;
+   [SerializeField] GameObject objToHide;
    bool dissolved = false;
    private void Start()
    {    
@@ -30,7 +31,8 @@ public class MeltingBlock : MonoBehaviour
         }        
         GetComponent<Renderer>().material.SetFloat("_DissolveTrigger", Time.time);    
         GetComponent<Collider>().isTrigger = true;
-        dissolved = true;    
+        dissolved = true;
+        objToHide.SetActive(true);    
     }
 
 

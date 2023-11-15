@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class ChargeCrystal : MonoBehaviour
 {
@@ -9,14 +10,20 @@ public class ChargeCrystal : MonoBehaviour
     [SerializeField] float currentCharge = 0;
     [SerializeField] float chargeSpeed = 1f;
     [SerializeField] float depletionDistance = 5f;
+    [SerializeField] Material emittingMat;
     [SerializeField] Color emissionColor = Color.cyan;
     [SerializeField] GameObject objToMelt = null;
     [SerializeField] Material rayMat;    
     [SerializeField] bool isFull = false;
+    [SerializeField] bool isRotating = true;
+    [SerializeField] float rotSpeed = 1f;
 
     public event Action onFullCharge;
     public event Action onFullDepletion;
-    private void Start() {
+    private void Start()
+    {
+        StartCoroutine(FloatRoutine());
+        emittingMat = SearchEmittingMaterial();
         if(isFull)
         {
             currentCharge = maxCharge;
@@ -92,6 +99,8 @@ public class ChargeCrystal : MonoBehaviour
             }
         }
 
+
+
     }
 
     private void ChargeTrigger()
@@ -132,6 +141,27 @@ public class ChargeCrystal : MonoBehaviour
 
     private void SetEmissionIntencity()
     {
-        GetComponent<Renderer>().material.SetColor("_EmissionColor", emissionColor * (currentCharge/100));
+        if(emittingMat == null) return;
+        emittingMat.SetColor("_EmissionColor", emissionColor * (currentCharge/100));
+    }
+
+    private IEnumerator FloatRoutine()
+    {
+        while(isRotating)
+        {
+            transform.Rotate(new Vector3(0,1,0) * rotSpeed, Space.Self);
+            yield return new WaitForFixedUpdate();
+        }
+    }
+
+    private Material SearchEmittingMaterial()
+    {
+       Material[] mats =  GetComponent<Renderer>().materials;
+       foreach (var mat in mats)
+       {
+        if(!mat.IsKeywordEnabled("_EMISSION")) continue;
+        return mat;
+       }
+       return null;
     }
 }

@@ -1845,6 +1845,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -16.9
       objectReference: {fileID: 0}
+    - target: {fileID: 4212827693177027271, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: far clip plane
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4212827693177027271, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: near clip plane
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 4508767954112682851, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: noHealInterval
       value: 2

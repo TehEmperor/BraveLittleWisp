@@ -7,15 +7,27 @@ public class Everburn : MonoBehaviour
 {
     [SerializeField] float overchargeIntensity = 1f;
     [SerializeField] ChargeCrystal[] crystals;
-    [SerializeField] GameObject postProcess;
+    [SerializeField] float timeToDimTheLights = 2f;
+    [SerializeField] GameObject toDim;
     PlayerController player;
     bool burning = true;
-
+    ChargerNBurner[] burners = null;
     private void Awake() 
     {
+        burners = FindObjectsOfType<ChargerNBurner>();
         player = FindObjectOfType<PlayerController>();       
         crystals = FindObjectsOfType<ChargeCrystal>();
         SetCrystalsTarget(); 
+        SetBurnerParametres(burning, overchargeIntensity);
+    }
+
+    private void SetBurnerParametres(bool isBurning, float oci)
+    {
+        foreach (ChargerNBurner burner in burners)
+        {
+            burner.SetParametres(isBurning, oci);
+        }
+
     }
 
     private void SetCrystalsTarget()
@@ -36,34 +48,34 @@ public class Everburn : MonoBehaviour
         }
         HushAnimation();
         burning = false;
+        SetBurnerParametres(burning, 0);
     }
 
     private void HushAnimation()
-    {        
-        postProcess.SetActive(false);
+    {
+        StartCoroutine(DimLights());        
         GetComponent<Animation>().Play();
     }
 
+    IEnumerator DimLights()
+    {
+        float time = 0;
+        while(time<timeToDimTheLights)
+        {
+           Color colour = GetComponent<Renderer>().material.GetColor("_EmissionColor");
+           GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.Lerp(colour, Color.black, time / timeToDimTheLights));
+           Color color = toDim.GetComponent<Renderer>().material.GetColor("_EmissionColor");
+           toDim.GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.Lerp(color, Color.black, time / timeToDimTheLights));
+           Color.Lerp(RenderSettings.ambientLight, Color.black, time/timeToDimTheLights);
+           time+=Time.deltaTime;
+           yield return null;
+        }
+        RenderSettings.ambientLight = Color.black;
+
+    }
     //AnimationEvent
     void DissolveTriger()
     {
         GetComponent<Renderer>().material.SetFloat("_DissolveTrigger", Time.time);
     } 
-
-
-    private void OnTriggerStay(Collider other)
-    {
-        if(!burning) return;
-        if (other.gameObject.CompareTag("Player"))
-        { player.GetComponent<Health>().OverchargeHealth(overchargeIntensity * Time.deltaTime); }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (!burning) return;
-        if (other.gameObject.CompareTag("Enemie"))
-        {
-            other.gameObject.GetComponent<Enemie>().BurnAndDie();
-        }
-    }
 }

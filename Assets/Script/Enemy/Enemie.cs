@@ -9,12 +9,14 @@ public class Enemie : MonoBehaviour
     [SerializeField] AudioClip discoverPlayerClip;
     [SerializeField] AudioClip suckLightClip;
     [SerializeField] GameObject currentDistraction = null;
+    [SerializeField] Minion minionPrefab;
     Vector3 originPosition;
     Vector3 roamToPosition = Vector3.zero;
     float speedOffset = 1f;
     [SerializeField] Health chaseTarget = null;
     Mover myMover;
     Coroutine suckLightRoutine;
+    Coroutine deathRoutine = null;
 
     [SerializeField] float minimumTriggerDistance = 20; //Check if the flash is within its sense radius. 
 
@@ -47,7 +49,7 @@ public class Enemie : MonoBehaviour
         }
         else if(other.gameObject.CompareTag(Tag.FlASH))
         {
-            print("here");
+            print(other.gameObject.name);
             currentDistraction = other.gameObject;
         }
 
@@ -92,20 +94,25 @@ public class Enemie : MonoBehaviour
 
     public void BurnAndDie()
     {
+        if(deathRoutine != null) return;
         StopAllCoroutines();
-        StartCoroutine(SlowBurn());
+        deathRoutine = StartCoroutine(SlowBurn());
     }
 
     IEnumerator SlowBurn()
     {
         yield return new WaitForSeconds(UnityEngine.Random.Range(2f, 4f));
         isOperational = false;
-        GetComponent<Animator>().Play("CleansedByFlame");
+        GetComponent<Animator>().Play("CleansedByFlame");       
+    }
 
+    void MinionSpawn()
+    {
+        Instantiate(minionPrefab, transform.position, Quaternion.identity);
     }
 
     void GetDestroyed()
-    {
+    {        
         Destroy(gameObject);
     }
 

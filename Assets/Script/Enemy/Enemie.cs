@@ -16,6 +16,7 @@ public class Enemie : MonoBehaviour
     [SerializeField] Health chaseTarget = null;
     Mover myMover;
     Coroutine suckLightRoutine;
+    Coroutine deathRoutine = null;
 
     [SerializeField] float minimumTriggerDistance = 20; //Check if the flash is within its sense radius. 
 
@@ -93,8 +94,9 @@ public class Enemie : MonoBehaviour
 
     public void BurnAndDie()
     {
+        if(deathRoutine != null) return;
         StopAllCoroutines();
-        StartCoroutine(SlowBurn());
+        deathRoutine = StartCoroutine(SlowBurn());
     }
 
     IEnumerator SlowBurn()

@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class BBEG : MonoBehaviour
 {
+    [Header("TestingSetialize")]
     [SerializeField] State startState = State.PhaseOne; //serialized for testing
-    
+    [SerializeField] bool canShoot = false;
+    [Header("Attacks")]
     [SerializeField] BossEmber thrownEmberPrefab;
     [SerializeField] Transform throwPoint;
     [SerializeField] float throwInterval = 4f;
     [SerializeField] float maxEnemieCount = 2f;
     [SerializeField] float pPosUpdateInterval = 0.3f;
     [SerializeField] float corruptionPlacementInterval = 1f;
+    [Header("FightStages")]
     [SerializeField] ChargeCrystal canon;
-    [SerializeField] Transform[] phaseTwoMinionSpawns;
-    [SerializeField] Minion minionPrefab;
     [SerializeField] Transform crystalMass;
+    [SerializeField] GameObject flashVolume;
+    [SerializeField] float flashDuration = 1f;
     [SerializeField] float crystalrevialinterval = 0.2f;
      List<Enemie> enemiesPresent = new List<Enemie>();
     float timeSinceLastThrow = 0f;
@@ -85,15 +88,23 @@ public class BBEG : MonoBehaviour
 
     private void ThrowEmber()
     {
-        if(timeSinceLastThrow < throwInterval) return;
+        if(timeSinceLastThrow < throwInterval || !canShoot) return;
         BossEmber ember = Instantiate(thrownEmberPrefab, throwPoint.position, Quaternion.identity);
         ember.SetTarget(target.transform.position);
         ember.onEnemieSpawn+=UpdateSpawnedEnemiesList;
+        ember.onDestroy+=UpdateCanShoot;
+        canShoot = false;
         timeSinceLastThrow = 0f;
     }
     private void UpdateSpawnedEnemiesList(Enemie enemie)
     {
+        canShoot = true;
      enemiesPresent.Add(enemie);   
+    }
+
+    private void UpdateCanShoot()
+    {
+        canShoot=true;
     }
 
     private bool MeansToAnEnd()
@@ -119,16 +130,6 @@ public class BBEG : MonoBehaviour
         }
     }
 
-    private void UndoMinions()
-    {
-        foreach (Enemie enemie in enemiesPresent)
-        {
-            Vector3 position = enemie.transform.position;
-            enemie.BurnAndDie();
-            Instantiate(minionPrefab, position, Quaternion.identity);
-        }
-    }
-
     private void GetRekt()
     {
         StopAllCoroutines();        
@@ -141,8 +142,8 @@ public class BBEG : MonoBehaviour
 
     private void PreparePhaseTwo()
     {
-        UndoMinions();
         canon.Deplete();
+        StartCoroutine(Flash());
         //also here should be played the animation for boss preparing for his next phase and in the end of animation the phase sshould be se to phasetwo;
         //meanwhile
         state = State.PhaseTwo;
@@ -196,6 +197,7 @@ public class BBEG : MonoBehaviour
             crystalMass.GetChild(i).gameObject.SetActive(onoff);
             yield return new WaitForSeconds(crystalrevialinterval);            
         }
+        canShoot = true;
 
     }
 
@@ -204,6 +206,15 @@ public class BBEG : MonoBehaviour
         float mod = target.GetComponent<PlayerController>().GetLightAsFracture();
         Debug.Log(mod);        
         corruptionPlacementInterval = Mathf.Clamp(maxCorruptionPlacementInterval - mod, 0.1f, maxCorruptionPlacementInterval);
+    }
+
+    IEnumerator Flash()
+    {
+        flashVolume.gameObject.SetActive(true);
+        RenderSettings.ambientLight = Color.white;
+        yield return new WaitForSeconds(flashDuration);
+        RenderSettings.ambientLight = Color.black;
+        flashVolume.gameObject.SetActive(false);
     }
 
 }

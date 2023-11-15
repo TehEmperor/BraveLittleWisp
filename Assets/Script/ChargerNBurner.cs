@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChargerNBurner : MonoBehaviour
 {
-    private bool burning = false;
+    [SerializeField] bool burning = false;
     private float ocIntensity = 1f;
 
     public void SetParametres(bool isBurning, float overchargeIntensity)
@@ -20,6 +20,11 @@ public class ChargerNBurner : MonoBehaviour
         if (!burning) return;
         if (other.gameObject.CompareTag("Player"))
         { other.GetComponent<Health>().OverchargeHealth(ocIntensity * Time.deltaTime); }
+        if (other.gameObject.CompareTag("Enemie"))
+        {
+
+            other.gameObject.GetComponent<Enemie>().BurnAndDie();
+        }
     }
 
     private void OnTriggerEnter(Collider other)

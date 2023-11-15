@@ -8,6 +8,7 @@ public class Flash : MonoBehaviour
     [SerializeField] bool isHoming = false;
     [SerializeField] float lifeTime = 10f;
     [SerializeField] float speed = 1f;
+    [SerializeField] Transform lightOutline;
     bool onGround;
     Vector3 target;
     public float lightRadius;
@@ -23,6 +24,7 @@ public class Flash : MonoBehaviour
         Destroy(gameObject, lifeTime);
         GetComponent<Light>().range = lightRadius;
         GetComponent<SphereCollider>().radius = lightRadius;
+        lightOutline.localScale = new Vector3(2, 2, 2) * lightRadius;
         
     }
 

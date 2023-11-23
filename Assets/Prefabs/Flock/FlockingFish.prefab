@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3971495890996960607}
   - component: {fileID: 7663628113275279922}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: FlockingFish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,6 +47,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FOVAngle: 270
   smoothDamp: 1
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 9
+  directionsToCheckWhenAvoidingObstacles:
+  - {x: 1, y: 0, z: 0}
+  - {x: -1, y: 0, z: 0}
+  - {x: 0, y: 1, z: 0}
+  - {x: 0, y: -1, z: 0}
 --- !u!1 &7039811941685496720
 GameObject:
   m_ObjectHideFlags: 0
@@ -58,7 +66,7 @@ GameObject:
   - component: {fileID: 7708402265669226794}
   - component: {fileID: 6725673664387800719}
   - component: {fileID: 8841291581435161157}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: FishBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}

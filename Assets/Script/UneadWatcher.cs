@@ -29,8 +29,8 @@ public class UneadWatcher : MonoBehaviour
     private void OnTriggerStay(Collider other) 
     {
         if(!other.gameObject.CompareTag("Player")) return;
-        rHand.position = other.transform.position;
-        head.position = other.transform.position;        
+        rHand.position = Vector3.Lerp(other.transform.position, rHand.position, 10f * Time.deltaTime);
+        head.position = Vector3.Lerp(other.transform.position, head.position, 0.1f* Time.deltaTime);    
     }
 
     private void OnTriggerEnter(Collider other) 

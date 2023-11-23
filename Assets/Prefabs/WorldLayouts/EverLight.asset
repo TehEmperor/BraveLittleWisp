@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c5bfd72db656ca4fb8db45e42bdcea0, type: 3}
-  m_Name: EverburningLight
+  m_Name: EverLight
   m_EditorClassIdentifier: 
   previousLevels:
   - {fileID: 11400000, guid: ff7d22e61443b9d43a6e92732ff43dc2, type: 2}
@@ -19,5 +19,8 @@ MonoBehaviour:
   isFinished: 1
   isDiscovered: 1
   isSpecial: 0
-  levelSceneReference: EverburningLight
+  levelDescription: In their last attempt to seal off the source of the evil, sorcerer-alchemists
+    of the east created light everburning. Just as it keeps evil at bay, it also
+    prevents you from facing it.
+  levelSceneReference: EverLight
   soulsTrack: 0500000000000000

@@ -18,5 +18,8 @@ MonoBehaviour:
   isFinished: 0
   isDiscovered: 1
   isSpecial: 0
+  levelDescription: At the root of the great tree, a corruption occurred. That is
+    the source, that is the pain this world endures. Until it is there, no light
+    can shine in the sky.
   levelSceneReference: TheRootOfEvil
   soulsTrack: 0200000000000000

@@ -19,5 +19,7 @@ MonoBehaviour:
   isFinished: 0
   isDiscovered: 1
   isSpecial: 1
+  levelDescription: "These existed before the world you are trying to save. \u201CWe
+    stand on the shoulders of giants\u201D. Tread carefully not to wake them."
   levelSceneReference: TheAbyss
   soulsTrack: 0400000000000000

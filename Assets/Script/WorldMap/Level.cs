@@ -11,7 +11,10 @@ public class Level : ScriptableObject
     [SerializeField] bool isFinished = false;
     [SerializeField] bool isDiscovered = true;
     [SerializeField] bool isSpecial = false;
+    [SerializeField] string levelDescription;
+    [Header("must be accurate and same as scene name in build index")]
     [SerializeField] string levelSceneReference; //must be accurate and same as scene name in build index
+    [Header("0 is Souls To Finish, 1 is Souls Collected Total")]
     [SerializeField] int[] soulsTrack = new int[2]; //0 is Souls to activate portal, 1 is souls collected;
     
     public bool IsFinished()
@@ -80,5 +83,9 @@ public class Level : ScriptableObject
         return levelSceneReference;
     }
 
+    public string GetLevelDescription()
+    {
+        return levelDescription;
+    }
     
 }

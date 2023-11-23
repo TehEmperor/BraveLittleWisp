@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/CrystalGarden.unity
     guid: 08bf5e59d1bf2c147befd5874dc88275
   - enabled: 1
-    path: Assets/Scenes/EverburningLight.unity
+    path: Assets/Scenes/EverLight.unity
     guid: 5c4d158d9006ecc459ab30c42318d091
   - enabled: 1
     path: Assets/Scenes/TheRootOfEvil.unity

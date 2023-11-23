@@ -19,5 +19,9 @@ MonoBehaviour:
   isFinished: 1
   isDiscovered: 1
   isSpecial: 0
+  levelDescription: 'A garden, created by the nation of the east, who were seeking
+    immortality. Using the power of the elements, they managed to entrap some of
+    the life-giving light in the crystals. With time, crystals grew dim, as well
+    as the elemental stones.  '
   levelSceneReference: CrystalGarden
   soulsTrack: 0400000000000000

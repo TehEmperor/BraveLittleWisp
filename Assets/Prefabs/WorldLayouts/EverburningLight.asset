@@ -16,8 +16,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ff7d22e61443b9d43a6e92732ff43dc2, type: 2}
   nextLevels:
   - {fileID: 11400000, guid: 9d874a460ce9c4d43bdc50d6a19d5b9c, type: 2}
-  isFinished: 0
+  isFinished: 1
   isDiscovered: 1
   isSpecial: 0
-  levelSceneReference: 
+  levelSceneReference: EverburningLight
   soulsTrack: 0500000000000000

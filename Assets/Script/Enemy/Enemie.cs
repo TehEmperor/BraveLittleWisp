@@ -89,6 +89,7 @@ public class Enemie : MonoBehaviour
 
     public void BurnAndDie()
     {
+        isOperational = false;
         if(deathRoutine != null) return;
         StopAllCoroutines();
         deathRoutine = StartCoroutine(SlowBurn());
@@ -96,8 +97,7 @@ public class Enemie : MonoBehaviour
 
     IEnumerator SlowBurn()
     {
-        yield return new WaitForSeconds(UnityEngine.Random.Range(2f, 4f));
-        isOperational = false;
+        yield return new WaitForSeconds(UnityEngine.Random.Range(2f, 4f));        
         GetComponent<Animator>().Play("CleansedByFlame");       
     }
 

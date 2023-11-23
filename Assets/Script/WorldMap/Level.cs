@@ -56,6 +56,7 @@ public class Level : ScriptableObject
 
     public void DiscoverNextLevels(bool secret)
     {
+        if(nextLevels.Count == 0) return;
         foreach (var level in nextLevels)
         {
             if(!secret && level.isSpecial) continue;

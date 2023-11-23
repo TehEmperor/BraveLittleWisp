@@ -7,6 +7,7 @@ public class BossEmber : MonoBehaviour
 {
     [SerializeField] Enemie enemiePrefab;
     [SerializeField] float speed = 5f;
+    [SerializeField] Vector3 offset = new Vector3(0,-0.5f, 0);
     [SerializeField] float fadeDuration = 5f;
     [SerializeField] Color emissionColor = Color.red;
     [SerializeField] float maxIntencity = 1f;
@@ -19,14 +20,14 @@ public class BossEmber : MonoBehaviour
 
     private void Start()
     {
-        GetComponent<Renderer>().material.SetColor("_EmissionColor", emissionColor * maxIntencity);
-        StartCoroutine(FadeAway());
-        transform.LookAt(target);  
+        // GetComponent<Renderer>().material.SetColor("_EmissionColor", emissionColor * maxIntencity);
+        // StartCoroutine(FadeAway());
+        transform.LookAt(target+offset);  
     }
 
     private void Update() 
     {
-      FlyAtTarget(target, speed);   
+      FlyAtTarget(target + offset, speed);   
     }
 
 

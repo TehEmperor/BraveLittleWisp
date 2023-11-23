@@ -7,6 +7,8 @@ public class BBEG : MonoBehaviour
     [Header("TestingSetialize")]
     [SerializeField] State startState = State.PhaseOne; //serialized for testing
     [SerializeField] bool canShoot = false;
+    [SerializeField] bool canCorrupt = false;
+    [SerializeField] Animator myAnimator;
     [Header("Attacks")]
     [SerializeField] BossEmber thrownEmberPrefab;
     [SerializeField] Transform throwPoint;
@@ -64,6 +66,7 @@ public class BBEG : MonoBehaviour
                 
                 break;
             case State.PhaseTwo:
+                if(!canCorrupt) return;
                 ModifyCorruptionIntencity();
                 PlayerFollowListUpdate();
                 CorruptPath();
@@ -72,6 +75,7 @@ public class BBEG : MonoBehaviour
             case State.PlayerLost:
             break;
             case State.PlayerWon:
+
             break;
 
         }
@@ -88,14 +92,21 @@ public class BBEG : MonoBehaviour
 
     private void ThrowEmber()
     {
-        if(timeSinceLastThrow < throwInterval || !canShoot) return;
-        BossEmber ember = Instantiate(thrownEmberPrefab, throwPoint.position, Quaternion.identity);
-        ember.SetTarget(target.transform.position);
-        ember.onEnemieSpawn+=UpdateSpawnedEnemiesList;
-        ember.onDestroy+=UpdateCanShoot;
+        if (timeSinceLastThrow < throwInterval || !canShoot) return;
+        myAnimator.SetTrigger("Attack");
         canShoot = false;
         timeSinceLastThrow = 0f;
     }
+
+    private void EmberSpawn()
+    {
+        myAnimator.ResetTrigger("Attack");
+        BossEmber ember = Instantiate(thrownEmberPrefab, throwPoint.position, Quaternion.identity);
+        ember.SetTarget(target.transform.position);
+        ember.onEnemieSpawn += UpdateSpawnedEnemiesList;
+        ember.onDestroy += UpdateCanShoot;
+    }
+
     private void UpdateSpawnedEnemiesList(Enemie enemie)
     {
         canShoot = true;
@@ -134,20 +145,28 @@ public class BBEG : MonoBehaviour
     {
         StopAllCoroutines();        
         if(state == State.PhaseOne)
+        {   StartCoroutine(Flash());
+            myAnimator.SetTrigger("Damage");
+            state = State.Interphase;
+            return;
+        }
+        else 
         {
-        state = State.Interphase;
-        return;}
-        else {state = State.PlayerWon;};
+            StartCoroutine(Flash());
+            myAnimator.SetTrigger("Death");
+            state = State.PlayerWon;
+        };
     }
 
     private void PreparePhaseTwo()
     {
         canon.Deplete();
-        StartCoroutine(Flash());
-        //also here should be played the animation for boss preparing for his next phase and in the end of animation the phase sshould be se to phasetwo;
-        //meanwhile
         state = State.PhaseTwo;
 
+    }
+    private void SetCorruptionReady()
+    {
+        canCorrupt = true;
     }
 
     private void PlayerFollowListUpdate()

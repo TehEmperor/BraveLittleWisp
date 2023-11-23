@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   previousLevels:
   - {fileID: 11400000, guid: 13c03d2d64a26f64daa0335efc10389c, type: 2}
-  nextLevels: []
+  nextLevels:
+  - {fileID: 11400000, guid: cdea0dafb589b444282bdd96a1fea63a, type: 2}
   isFinished: 1
   isDiscovered: 1
   isSpecial: 0

@@ -25,19 +25,23 @@ public class Level : ScriptableObject
     {
         return isDiscovered;
     }
+
     public void Discover()
     {
         isDiscovered = true;
     }
 
-    public void Finish()
+    public void Finish(int soulsCollected)
     {
         isFinished = true;
+        if(soulsCollected>soulsTrack[1]) soulsTrack[1] = soulsCollected;        
     }
 
     public int GetSoulsAcquired()
     {
-        return soulsTrack[1];
+        if(!isFinished) return 0;
+        if(soulsTrack[1]>soulsTrack[0]) return soulsTrack[1];
+        return soulsTrack[0];
     }
 
     public int GetSoulsToActivate()

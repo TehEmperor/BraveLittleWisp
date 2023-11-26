@@ -25,7 +25,7 @@ public class Minion : MonoBehaviour
     
     bool isAscending;
     private PlayerController player;
-    private Transform portal;
+    private Portal portal;
     GameObject enemy;
 
     private void Awake()
@@ -105,9 +105,9 @@ public class Minion : MonoBehaviour
     {
         if (!portal) return false;
         if (!isFollowing) return false;
-        if(Vector3.Distance(portal.position, transform.position) > player.GetLightRange()) return false;
+        if(Vector3.Distance(portal.transform.position, transform.position) > player.GetLightRange()) return false;
         isAscending = true;
-        myMover.MoveTo(portal.position, 1.5f);
+        myMover.MoveTo(portal.transform.position, 1.5f);
         return true;
     }
 
@@ -151,9 +151,9 @@ public class Minion : MonoBehaviour
         enemy = _enemy;
     }
     
-    void PortaPosition(Transform pos)
+    void PortaPosition(Portal _portal)
     {
-        portal =pos;
+        portal = _portal;
     }
 
     void StartParticle()
@@ -185,9 +185,12 @@ public class Minion : MonoBehaviour
         GetComponent<Animator>().SetTrigger("Ascend");        
     }
 
+
+
     //animation event
     void Ascended()
     {
+        portal.CollectSoul();
         Destroy(gameObject);
     }
 }

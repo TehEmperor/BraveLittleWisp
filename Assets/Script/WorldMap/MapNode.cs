@@ -12,7 +12,7 @@ public class MapNode : MonoBehaviour, ISaveable
     [System.Serializable]
     class LevelData
     {
-        public LevelData(string n, bool d, bool f)
+        public LevelData(string n, bool d, bool f, int st)
         {
             this.name = n;
             this.discoverd = d;
@@ -22,6 +22,7 @@ public class MapNode : MonoBehaviour, ISaveable
         string name;
         public bool discoverd;
         public bool finished;
+        public int soulsCollected;
     }
 
     
@@ -71,7 +72,7 @@ public class MapNode : MonoBehaviour, ISaveable
 
     public object CaptureState()
     {
-        LevelData saveable = new LevelData(levelData.name, levelData.IsDiscovered(), levelData.IsFinished());     
+        LevelData saveable = new LevelData(levelData.name, levelData.IsDiscovered(), levelData.IsFinished(), levelData.GetSoulsAcquired());     
         return saveable;   
     }
 
@@ -80,7 +81,7 @@ public class MapNode : MonoBehaviour, ISaveable
         print("TryingToLoad");
         LevelData restoreData = (LevelData)state;
         if(!restoreData.discoverd) {levelData.ResetToDefaultState(); return;}
-        if(restoreData.finished){levelData.Finish();}
+        if(restoreData.finished){levelData.Finish(restoreData.soulsCollected);}
         if(restoreData.discoverd){levelData.Discover();}
         
     }

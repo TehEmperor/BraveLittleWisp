@@ -17,7 +17,7 @@ public class WorldMapKeeper : MonoBehaviour
     public static int currentMapIndex = 0;
     const string defaultSaveFile = "save";
     Dictionary<Level, MapNode> LevelToMapDictionary = new Dictionary<Level, MapNode>();
-
+    public event Action<float> onLightCalculated;
     private void Awake() 
     {
         Load();
@@ -35,6 +35,7 @@ public class WorldMapKeeper : MonoBehaviour
     private void Start()
     {
         DrawPaths();
+        onLightCalculated?.Invoke(CalculateLightFraction());
     }
 
     private void DrawPaths()
@@ -83,7 +84,6 @@ public class WorldMapKeeper : MonoBehaviour
         int spiritsGathered = 0;
         foreach(Level level in myLayout.GetLevelsMap())
         {
-            if(!level.IsFinished())continue;
             spiritsGathered+= level.GetSoulsAcquired();
         }
         return spiritsGathered;
@@ -94,9 +94,15 @@ public class WorldMapKeeper : MonoBehaviour
         return LevelToMapDictionary[level];
     }
     
-    public void FinishLevel(Level level)
+    public float CalculateLightFraction()
     {
-        level.Finish();        
+        float[] track = new float[2];
+        foreach(Level level in myLayout.GetLevelsMap())
+        {
+            track[0] += level.GetSoulsToActivate();
+            track[1] += level.GetSoulsAcquired();
+        }
+        return track[1]/track[0];
     }
 
     public void DiscoverLevel(Level level)
@@ -133,9 +139,7 @@ public class WorldMapKeeper : MonoBehaviour
     public void Load()
     {
         GetComponent<SaveSystem>().Load(defaultSaveFile);
-    }
-
-    
+    }  
 
     
 }

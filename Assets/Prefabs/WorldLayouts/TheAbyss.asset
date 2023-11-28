@@ -17,7 +17,9 @@ MonoBehaviour:
   nextLevels:
   - {fileID: 11400000, guid: 13c03d2d64a26f64daa0335efc10389c, type: 2}
   isFinished: 0
-  isDiscovered: 0
+  isDiscovered: 1
   isSpecial: 1
+  levelDescription: "These existed before the world you are trying to save. \u201CWe
+    stand on the shoulders of giants\u201D. Tread carefully not to wake them."
   levelSceneReference: TheAbyss
   soulsTrack: 0400000000000000

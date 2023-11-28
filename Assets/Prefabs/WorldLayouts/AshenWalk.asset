@@ -16,8 +16,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: aabc1238716067040acbf82a2c8ca356, type: 2}
   nextLevels:
   - {fileID: 11400000, guid: ff7d22e61443b9d43a6e92732ff43dc2, type: 2}
-  isFinished: 0
-  isDiscovered: 0
+  isFinished: 1
+  isDiscovered: 1
   isSpecial: 0
+  levelDescription: "A cinder from the Pyre you lit set this forest path on fire.
+    As you move through it, your wings heat the coals underneath. An Evil Spirit
+    mistakes the coals for its lost eyes. Don\u2019t ever stop moving! "
   levelSceneReference: AshenWalk
   soulsTrack: 0300000000000000

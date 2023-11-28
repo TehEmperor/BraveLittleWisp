@@ -11,7 +11,10 @@ public class Level : ScriptableObject
     [SerializeField] bool isFinished = false;
     [SerializeField] bool isDiscovered = true;
     [SerializeField] bool isSpecial = false;
+    [SerializeField] string levelDescription;
+    [Header("must be accurate and same as scene name in build index")]
     [SerializeField] string levelSceneReference; //must be accurate and same as scene name in build index
+    [Header("0 is Souls To Finish, 1 is Souls Collected Total")]
     [SerializeField] int[] soulsTrack = new int[2]; //0 is Souls to activate portal, 1 is souls collected;
     
     public bool IsFinished()
@@ -22,19 +25,23 @@ public class Level : ScriptableObject
     {
         return isDiscovered;
     }
+
     public void Discover()
     {
         isDiscovered = true;
     }
 
-    public void Finish()
+    public void Finish(int soulsCollected)
     {
         isFinished = true;
+        if(soulsCollected>soulsTrack[1]) soulsTrack[1] = soulsCollected;        
     }
 
     public int GetSoulsAcquired()
     {
-        return soulsTrack[1];
+        if(!isFinished) return 0;
+        if(soulsTrack[1]>soulsTrack[0]) return soulsTrack[1];
+        return soulsTrack[0];
     }
 
     public int GetSoulsToActivate()
@@ -56,6 +63,7 @@ public class Level : ScriptableObject
 
     public void DiscoverNextLevels(bool secret)
     {
+        if(nextLevels.Count == 0) return;
         foreach (var level in nextLevels)
         {
             if(!secret && level.isSpecial) continue;
@@ -79,5 +87,9 @@ public class Level : ScriptableObject
         return levelSceneReference;
     }
 
+    public string GetLevelDescription()
+    {
+        return levelDescription;
+    }
     
 }

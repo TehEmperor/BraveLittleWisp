@@ -16,8 +16,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ff3bc768ed80ce446af45cabd5d25f04, type: 2}
   nextLevels:
   - {fileID: 11400000, guid: 8edc38011c440f9439cb81497d7d991b, type: 2}
+  - {fileID: 11400000, guid: ab2c71e85f42b1b46b626b34aa9c61b7, type: 2}
   isFinished: 1
   isDiscovered: 1
   isSpecial: 0
+  levelDescription: Darkness consumed empires whole, yet the roads they built outlasted
+    the builders. Though even before the darkness came, something deeply rotten was
+    at the base of its greatness.
   levelSceneReference: SunkenPath
   soulsTrack: 0300000000000000

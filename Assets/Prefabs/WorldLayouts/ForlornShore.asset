@@ -16,8 +16,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8edc38011c440f9439cb81497d7d991b, type: 2}
   nextLevels:
   - {fileID: 11400000, guid: aabc1238716067040acbf82a2c8ca356, type: 2}
-  isFinished: 0
-  isDiscovered: 0
+  isFinished: 1
+  isDiscovered: 1
   isSpecial: 0
+  levelDescription: 'Winding shoreline, tormented by the tides. It is easy to get
+    lost between the sand dunes. Slow and steady pace may help you navigate. '
   levelSceneReference: ForlornShore
   soulsTrack: 0300000000000000

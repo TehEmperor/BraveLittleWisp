@@ -24,14 +24,13 @@ public class Enemie : MonoBehaviour
     bool isOperational = true;
     public static event Action<GameObject> OnEnemyDetection;
     public static event Action OnEnemyDetectionBool;
-    public static event Action<float> IntensityControl;
 
 
     private void Awake()
     {
         
         myMover = GetComponent<Mover>();
-
+        chaseTarget = GameObject.FindWithTag("Player").GetComponent<Health>();
     }
     private void Start()
     {
@@ -42,12 +41,7 @@ public class Enemie : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag(Tag.PLAYER))
-        {
-            chaseTarget = other.gameObject.GetComponent<Health>();
-            OnEnemyDetection?.Invoke(this.gameObject);
-        }
-        else if(other.gameObject.CompareTag(Tag.FlASH))
+        if(other.gameObject.CompareTag(Tag.FlASH))
         {
             print(other.gameObject.name);
             currentDistraction = other.gameObject;
@@ -78,11 +72,12 @@ public class Enemie : MonoBehaviour
 
     private bool Chase()
     {
-        if (!chaseTarget) return false;
+        if (Vector3.Distance(transform.position, chaseTarget.transform.position) >= minimumTriggerDistance) return false;
         float chaseDistance = chaseTarget.GetComponent<PlayerController>().GetLightRange() + 1;
         if (Vector3.Distance(transform.position, chaseTarget.transform.position) <= chaseDistance)
         {
-            if (!isChasing) GetComponent<AudioSource>().PlayOneShot(discoverPlayerClip); //Music is not playing for player detection for some reason; 
+            if (!isChasing) 
+            {GetComponent<AudioSource>().PlayOneShot(discoverPlayerClip); OnEnemyDetection?.Invoke(this.gameObject);} //Music is not playing for player detection for some reason; 
             isChasing = true;
             if (suckLightRoutine == null) suckLightRoutine = StartCoroutine(SuckLight());
             myMover.MoveTo(chaseTarget.transform.position, speedOffset);
@@ -94,6 +89,7 @@ public class Enemie : MonoBehaviour
 
     public void BurnAndDie()
     {
+        isOperational = false;
         if(deathRoutine != null) return;
         StopAllCoroutines();
         deathRoutine = StartCoroutine(SlowBurn());
@@ -101,8 +97,7 @@ public class Enemie : MonoBehaviour
 
     IEnumerator SlowBurn()
     {
-        yield return new WaitForSeconds(UnityEngine.Random.Range(2f, 4f));
-        isOperational = false;
+        yield return new WaitForSeconds(UnityEngine.Random.Range(2f, 4f));        
         GetComponent<Animator>().Play("CleansedByFlame");       
     }
 

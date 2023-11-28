@@ -1416,7 +1416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b8debabf35e9a04f873074089f037e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLevelName: {fileID: 4926121071671879620}
+  currentLevelName: {fileID: 534961660206264634}
   previousLevelsContainer: {fileID: 3460353772403266172}
   nextLevelsContainer: {fileID: 1200804046341873882}
   choiceButton: {fileID: 1175471148789503966, guid: 88ee7979a4c74394f997d3f9bf06d984, type: 3}
@@ -2772,6 +2772,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1200804046341873882}
     m_Modifications:
+    - target: {fileID: 212103275469068728, guid: 88ee7979a4c74394f997d3f9bf06d984, type: 3}
+      propertyPath: tooltipPrefab
+      value: 
+      objectReference: {fileID: 2036625711219369376, guid: 9ab609ce5f56d094da58f96bb789e4f3, type: 3}
     - target: {fileID: 1517992678284293848, guid: 88ee7979a4c74394f997d3f9bf06d984, type: 3}
       propertyPath: m_Name
       value: LevelChoiceButton
@@ -2786,6 +2790,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2426255458176986524, guid: 88ee7979a4c74394f997d3f9bf06d984, type: 3}
       propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2426255458176986524, guid: 88ee7979a4c74394f997d3f9bf06d984, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5747149348617574513, guid: 88ee7979a4c74394f997d3f9bf06d984, type: 3}

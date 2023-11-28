@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c5bfd72db656ca4fb8db45e42bdcea0, type: 3}
   m_Name: TheRootOfEvil
   m_EditorClassIdentifier: 
-  previousLevels: []
+  previousLevels:
+  - {fileID: 11400000, guid: a7b2ead393f821142b7c3e1f08f63d55, type: 2}
   nextLevels: []
   isFinished: 0
-  isDiscovered: 0
+  isDiscovered: 1
   isSpecial: 0
+  levelDescription: At the root of the great tree, a corruption occurred. That is
+    the source, that is the pain this world endures. Until it is there, no light
+    can shine in the sky.
   levelSceneReference: TheRootOfEvil
-  soulsAquired: 0
+  soulsTrack: 0200000000000000

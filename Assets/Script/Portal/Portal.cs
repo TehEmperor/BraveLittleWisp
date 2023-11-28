@@ -14,17 +14,17 @@ public class Portal : MonoBehaviour
     public float fadeInDuration = 1f;
     public int sceneToLoad = -1;
     public ParticleSystem[] fires;
-    private int soulsPresent = 0;
+    private int soulsNeeded = 0;
     int soulsCollected;
     bool isActivated = false;
     GameObject player;
     public event Action onAllSoulsCollected;
-    public static event Action<Transform> onPlayerWithinRange;   
+    public static event Action<Portal> onPlayerWithinRange; 
       
     private void Start()
     {
-        soulsPresent = SoulsRquiredToActivateCount();
-        fires =  SpawnColumns(fireColumnPrefab,soulsPresent);
+        soulsNeeded = SoulsRquiredToActivateCount();
+        fires =  SpawnColumns(fireColumnPrefab,soulsNeeded);
         HushFires(isActivated);                    
     }
 
@@ -76,21 +76,14 @@ public class Portal : MonoBehaviour
         if(other.gameObject.CompareTag(Tag.COLLECTABLE))
         {   
             LitColumn();
-            other.gameObject.GetComponent<Minion>().StartTheAscention(); // this is where we should activate any possible animations for when we bring souls.
-            soulsCollected++;
-            if(soulsCollected >= soulsPresent)
-            {
-                isActivated = true;           
-                onAllSoulsCollected?.Invoke();                
-            }            
+            other.gameObject.GetComponent<Minion>().StartTheAscention(); // this is where we should activate any possible animations for when we bring souls.                        
         }
 
         else if (other.gameObject.CompareTag(Tag.PLAYER))
         {
-            onPlayerWithinRange?.Invoke(this.transform);
+            onPlayerWithinRange?.Invoke(this);
             player = other.gameObject;
             if(!isActivated) return;
-            soulsPresent = 0;
             StartCoroutine(LoadNextLevel());
         }
     }
@@ -109,7 +102,7 @@ public class Portal : MonoBehaviour
 
     private void UpateWorldKeeper()
     {
-        myLevel.Finish();
+        myLevel.Finish(soulsCollected);
         myLevel.DiscoverNextLevels(isSecret);
         WorldMapKeeper keeper = FindObjectOfType<WorldMapKeeper>();
         keeper.LevelChange(myLevel);
@@ -119,6 +112,16 @@ public class Portal : MonoBehaviour
     {
         isSecret = onoff;
     }   
+
+    public void CollectSoul()
+    {
+        soulsCollected++;
+        if (soulsCollected >= soulsNeeded && !isActivated)
+        {
+            isActivated = true;
+            onAllSoulsCollected?.Invoke();
+        }
+    }
     
 
     public ParticleSystem[] SpawnColumns(GameObject columnPrefab, int amount)

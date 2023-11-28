@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1732525369095627594}
-  m_Layer: 2
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 1112688999264666782}
   - component: {fileID: 982628176037309022}
   - component: {fileID: 983013532454889670}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4869,7 +4869,7 @@ GameObject:
   - component: {fileID: 1112306560656664858}
   - component: {fileID: 982388832370651600}
   - component: {fileID: 982803949559930606}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EyeFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9694,7 +9694,7 @@ GameObject:
   - component: {fileID: 1464825916081597812}
   - component: {fileID: 1628485524007286206}
   - component: {fileID: 1628105659944557184}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EyeFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14519,7 +14519,7 @@ GameObject:
   - component: {fileID: 1462191291142324464}
   - component: {fileID: 1628421363271003696}
   - component: {fileID: 1630287800525040808}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19344,7 +19344,7 @@ GameObject:
   - component: {fileID: 8578547399245744738}
   - component: {fileID: 7765156673568920096}
   - component: {fileID: 9132727464176948562}
-  m_Layer: 2
+  m_Layer: 3
   m_Name: Eyel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19442,7 +19442,7 @@ GameObject:
   - component: {fileID: 2909933201735389484}
   - component: {fileID: 4289493088736942292}
   - component: {fileID: 8481735079029425782}
-  m_Layer: 2
+  m_Layer: 3
   m_Name: EyelR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19539,7 +19539,7 @@ GameObject:
   - component: {fileID: 6965364047479010541}
   - component: {fileID: 7095585741421178101}
   - component: {fileID: 7096554794342145333}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24413,11 +24413,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3665427059649299756, guid: a07efb417c174c1489c6ca375cb8193d, type: 3}
       propertyPath: m_Radius
-      value: 14
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3665427059649299930, guid: a07efb417c174c1489c6ca375cb8193d, type: 3}
       propertyPath: m_Name
       value: Enemie
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665427059649299930, guid: a07efb417c174c1489c6ca375cb8193d, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3665427059649299930, guid: a07efb417c174c1489c6ca375cb8193d, type: 3}
       propertyPath: m_TagString
@@ -24570,5 +24574,5 @@ MonoBehaviour:
   currentDistraction: {fileID: 0}
   minionPrefab: {fileID: -453338596902703704, guid: 0c4555948c6edbd48b4429561fb5fd0c, type: 3}
   chaseTarget: {fileID: 0}
-  minimumTriggerDistance: 20
+  minimumTriggerDistance: 14
   isChasing: 0

@@ -7,7 +7,7 @@ using System;
 
 public class NavigationUI : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI currentLevelName;
+    [SerializeField] Button currentLevelName;
     [SerializeField] Transform previousLevelsContainer;
     [SerializeField] Transform nextLevelsContainer;
     [SerializeField] Button choiceButton;
@@ -16,7 +16,8 @@ public class NavigationUI : MonoBehaviour
     
     public void SetActiveLevel(Level level)
     {
-        currentLevelName.text = level.name;
+        currentLevelName.GetComponentInChildren<TextMeshProUGUI>().text = level.name;
+        currentLevelName.GetComponent<LevelDescriptionSpawner>().SetLevel(level);
         SpawnLevelButtons(level.GetReachableLevels(), nextLevelsContainer);
         SpawnLevelButtons(level.GetPreviousLevels(), previousLevelsContainer);  
         onLevelSet?.Invoke(level);

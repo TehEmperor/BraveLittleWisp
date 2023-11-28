@@ -19,5 +19,7 @@ MonoBehaviour:
   isFinished: 1
   isDiscovered: 1
   isSpecial: 0
+  levelDescription: A hollowed trunk of a once great and ancient tree. You were born
+    here.
   levelSceneReference: GreatTree
   soulsTrack: 0300000000000000

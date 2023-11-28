@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1037315075081968744}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.1922512, y: -1.2498842, z: -0.37695503}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -116,7 +116,6 @@ MonoBehaviour:
   fadeDuration: 5
   emissionColor: {r: 1, g: 0, b: 0, a: 1}
   maxIntencity: 5
-  canon: {fileID: 0}
 --- !u!54 &7215941940907436735
 Rigidbody:
   m_ObjectHideFlags: 0

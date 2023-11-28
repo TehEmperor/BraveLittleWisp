@@ -164,7 +164,7 @@ MonoBehaviour:
   fireColumnPrefab: {fileID: 8339981334457741881, guid: e243b566da6eaeb4bbb695ddb5aabb0c, type: 3}
   fadeOutDuration: 1
   fadeInDuration: 1
-  sceneToLoad: 2
+  sceneToLoad: 0
   fires: []
 --- !u!54 &2133597372
 Rigidbody:

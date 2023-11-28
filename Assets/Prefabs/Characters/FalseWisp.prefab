@@ -43869,5 +43869,5 @@ MonoBehaviour:
   patrolSpeedModifier: 0.5
   chaseSpeedMod: 2
   callRaius: 10
-  discoverPlayerClip: {fileID: 0}
+  discoverPlayerClip: {fileID: 8300000, guid: 666e2e9773517ff4e9ebab84a8acd1b6, type: 3}
   slowPlayerDuration: 5

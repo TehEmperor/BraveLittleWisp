@@ -5,38 +5,41 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Main Menu.unity
-    guid: 270a7477d5a8adc0785c3058d1b4bcc8
-  - enabled: 0
-    path: Assets/Scenes/WorldMapPrototype.unity
-    guid: 836acb9f353500b4796f6144c00dc41e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/DemoBuildMap.unity
     guid: 9a14037e9b1ff674b94816374def2c3c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: ad6e126866597ce499c20980cc4690a9
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/GreatTree.unity
     guid: 7779023090e98e64fb2719e1a6f6ebab
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SunkenPath.unity
     guid: a4ec86f213b69d243ac2fffdfc189488
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/BlackPit.unity
     guid: d8e779e03b508d141881809c92bad7e4
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TheAbyss.unity
     guid: 05b83db92d731b54daf8b8d0049d5bc7
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/ForlornShore.unity
     guid: 40fdcec9e1ba5b7428377804f66d7ef2
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/FuneralPyre.unity
     guid: 41cb14572d56cea40b1dd4dc6f153cbd
   - enabled: 1
     path: Assets/Scenes/AshenWalk.unity
     guid: 33db701e73395cb47a2d913786e215b4
+  - enabled: 1
+    path: Assets/Scenes/CrystalGarden.unity
+    guid: 08bf5e59d1bf2c147befd5874dc88275
+  - enabled: 1
+    path: Assets/Scenes/EverLight.unity
+    guid: 5c4d158d9006ecc459ab30c42318d091
+  - enabled: 1
+    path: Assets/Scenes/TheRootOfEvil.unity
+    guid: 42ae345facafca44b93189dde05e46ae
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: a1777c482d1515e46989929a2ceedc63, type: 2}

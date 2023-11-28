@@ -15,9 +15,13 @@ MonoBehaviour:
   previousLevels:
   - {fileID: 11400000, guid: cdea0dafb589b444282bdd96a1fea63a, type: 2}
   nextLevels:
-  - {fileID: 11400000, guid: cdea0dafb589b444282bdd96a1fea63a, type: 2}
-  isFinished: 0
-  isDiscovered: 0
+  - {fileID: 11400000, guid: 497659275ef39374b995376794cf8a98, type: 2}
+  isFinished: 1
+  isDiscovered: 1
   isSpecial: 0
+  levelDescription: Nation of the forest created a bloody ritual to stop the Evil
+    Spirits. Bright did the fire burn, swallowing not only the approaching evil spirits,
+    but also those, who summoned it. No fire will burn you, so you may as well rekindle
+    their Funeral Pyre.
   levelSceneReference: FuneralPyre
   soulsTrack: 0500000000000000

@@ -18,5 +18,6 @@ MonoBehaviour:
   isFinished: 1
   isDiscovered: 1
   isSpecial: 0
+  levelDescription: A place in-between, where you can practice your moves.
   levelSceneReference: Tutorial
   soulsTrack: 0100000000000000

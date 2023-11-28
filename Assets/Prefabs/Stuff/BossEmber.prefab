@@ -61,7 +61,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 3
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a03996c6735e9d44e9aaf93a7a6eab0a, type: 2}
@@ -113,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemiePrefab: {fileID: 1902745887977336542, guid: cf0953f045f7a774283e85838d35b7f2, type: 3}
   speed: 5
+  offset: {x: 0, y: -0.5, z: 0}
   fadeDuration: 5
   emissionColor: {r: 1, g: 0, b: 0, a: 1}
   maxIntencity: 5

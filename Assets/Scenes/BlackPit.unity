@@ -35662,6 +35662,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23180403353261272, guid: 6e86e4137f1a88c46a6e2840f70b32b1, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e86e4137f1a88c46a6e2840f70b32b1, type: 3}
 --- !u!4 &1601522445 stripped
@@ -41360,7 +41364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4212827693177027271, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: near clip plane
-      value: 0.1
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 4638548348093692171, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_Layer

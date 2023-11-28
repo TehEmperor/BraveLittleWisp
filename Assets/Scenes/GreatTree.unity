@@ -330,6 +330,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4395339375239553533, guid: 123b6f2aa0b412546b9bb997087e1723, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 123b6f2aa0b412546b9bb997087e1723, type: 3}
 --- !u!1 &272648785
@@ -786,6 +790,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1478622217}
     m_Modifications:
+    - target: {fileID: 221377866478440485, guid: 341be672e8731fa4d8e6c46237f07b84, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5132186037802003837, guid: 341be672e8731fa4d8e6c46237f07b84, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -962,6 +970,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1478622217}
     m_Modifications:
+    - target: {fileID: 2411110115868966015, guid: e5a137e7a6b6b5b41875d53ab0764aec, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6501382217689220197, guid: e5a137e7a6b6b5b41875d53ab0764aec, type: 3}
       propertyPath: m_Name
       value: P_tdFF_Mushroom_2_Group_1
@@ -1294,6 +1306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_tdFF_Mushroom_2_Group_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1252625565282614189, guid: c86c79123354f034e8aac2d5176aaa3d, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c86c79123354f034e8aac2d5176aaa3d, type: 3}
 --- !u!1001 &1379017648
@@ -1467,6 +1483,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1478622217}
     m_Modifications:
+    - target: {fileID: 3418995980165445933, guid: d9c61f14746c18440a73515d35fa7928, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4074138262195882323, guid: d9c61f14746c18440a73515d35fa7928, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1813,6 +1833,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 990081731512624643, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1232731391319759486, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -22.09
@@ -1857,9 +1881,17 @@ PrefabInstance:
       propertyPath: noHealInterval
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5440056024817773550, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: m_LightLayerMask
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6616107625852864004, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_Name
       value: Core
+      objectReference: {fileID: 0}
+    - target: {fileID: 7139064691098448103, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7139064691098448103, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_BoundingSphereOverride.w

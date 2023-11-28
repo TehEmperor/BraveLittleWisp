@@ -1262,13 +1262,29 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5440056024817773550, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: m_LightLayerMask
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5498511422750463840, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6616107625852864004, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_Name
       value: Core
       objectReference: {fileID: 0}
+    - target: {fileID: 7139064691098448103, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7139064691098448121, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_Layer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488427418939505921, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8516950489698017512, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: myLantern

@@ -18,6 +18,8 @@ public class Throw : MonoBehaviour
     [SerializeField] float throwDistance = 10f;
     [SerializeField] bool isThrowToggleOn;
     [SerializeField] float coolDownPeriod = 2f;
+    [Range(0.5f, 1f)]
+    [SerializeField] float lightRangeMod;
     PlayerController playerController;
     Health playerHealth;
 
@@ -78,7 +80,7 @@ public class Throw : MonoBehaviour
         DoDamage();
         flash = Instantiate(flashPrefab, transform.position, Quaternion.identity);
         flash.SetTarget(target);
-        flash.lightRadius = playerController.GetLightRange();   
+        flash.lightRadius = playerController.GetLightRange() * lightRangeMod;   
         timeOfLastThrow = Time.time;    
         
     }

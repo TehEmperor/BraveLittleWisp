@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class LightSource : MonoBehaviour
 {
-    [SerializeField] float lightMaxRange = 18f, lightMinIntensity = 0f, lightMaxIntensity = 200f;
+    [SerializeField] float lightMaxRange = 18f, lightMinIntensity = 0f, rangeIntencityStep = 200f;
     [SerializeField] [Range(0,1)] float effectiveRangeMod = 0.8f;
     [SerializeField] PlayerController myPlayer;
     [SerializeField] float lerpSpeed = 20f;    
@@ -76,14 +76,14 @@ public class LightSource : MonoBehaviour
 
     private void CalculateLightHeight()
     {
-        float currentRangeMod = GetLightAsPercentage();        
-        Vector3 lightHeight = new Vector3(transform.localPosition.x, currentMnY + (Mathf.Clamp(lightYrangeMax * currentRangeMod, lightYRangeMin, lightYrangeMax)), transform.localPosition.z);
+                
+        Vector3 lightHeight = new Vector3(transform.localPosition.x, myLight.range/2, transform.localPosition.z);
         transform.localPosition = lightHeight;
     }
 
     void LightIntesityEffects()
     {
-        var amount = lightMaxIntensity * (myHealth.GetLightIntesityModifier());        
+        var amount = rangeIntencityStep * myLight.range * (myHealth.GetLightIntesityModifier());        
         if (amount < lightMinIntensity) return;
         myLight.intensity = Mathf.Lerp(myLight.intensity, amount, steps * Time.deltaTime);
     }

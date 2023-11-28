@@ -705,25 +705,53 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3339920574228872222, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5495712261669535491, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
       propertyPath: myLantern
       value: 
       objectReference: {fileID: 427850616004979263}
+    - target: {fileID: 5495712261669535491, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
+      propertyPath: lightRangeMod
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495712261669535491, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
+      propertyPath: throwDistance
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441825271852887820, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441825271852887820, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 91.11637
+      objectReference: {fileID: 0}
     - target: {fileID: 6441825271852887820, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
       propertyPath: m_RenderingLayerMask
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6441825271852887820, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 6e-45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441825271852887820, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 4.5904e-41
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6441825271852887820, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 0.00016145315
+      value: 3e-45
       objectReference: {fileID: 0}
     - target: {fileID: 6441825271852887820, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 4.5904e-41
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441825271852887821, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6441825271852887823, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
       propertyPath: effectiveRangeMod
@@ -732,6 +760,10 @@ PrefabInstance:
     - target: {fileID: 6441825271852887823, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
       propertyPath: lightMaxIntensity
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441825271852887823, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
+      propertyPath: rangeIntencityStep
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8144775690808767493, guid: aabce5d26fd30374c9e83e0415c4424b, type: 3}
       propertyPath: m_LightLayerMask

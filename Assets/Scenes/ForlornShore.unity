@@ -1982,6 +1982,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8516950489698017512, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: lightRangeMod
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516950489698017512, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
+      propertyPath: throwDistance
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8316842356571339416, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}

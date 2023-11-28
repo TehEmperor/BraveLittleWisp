@@ -1889,26 +1889,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Core
       objectReference: {fileID: 0}
-    - target: {fileID: 7139064691098448103, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
-      propertyPath: m_RenderingLayerMask
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7139064691098448103, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
-      propertyPath: m_BoundingSphereOverride.w
-      value: 6e-45
-      objectReference: {fileID: 0}
-    - target: {fileID: 7139064691098448103, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
-      propertyPath: m_BoundingSphereOverride.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7139064691098448103, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
-      propertyPath: m_BoundingSphereOverride.y
-      value: 3e-45
-      objectReference: {fileID: 0}
-    - target: {fileID: 7139064691098448103, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
-      propertyPath: m_BoundingSphereOverride.z
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
 --- !u!1001 &4788252558262243245

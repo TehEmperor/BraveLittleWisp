@@ -15,7 +15,7 @@ GameObject:
   m_Name: Crystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1032216804850327732
@@ -131,6 +131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   existanceTime: 10
   damage: 2
+  isTemporary: 1
 --- !u!136 &8056812102580864500
 CapsuleCollider:
   m_ObjectHideFlags: 0

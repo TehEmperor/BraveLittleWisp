@@ -144,8 +144,7 @@ LODGroup:
     - renderer: {fileID: 1913351425228768258}
   - screenRelativeHeight: 0.009470524
     fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 8594519207987839003}
+    renderers: []
   m_Enabled: 1
 --- !u!136 &8934049361516045381
 CapsuleCollider:
@@ -178,7 +177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &215841980086279625
 Transform:
   m_ObjectHideFlags: 0

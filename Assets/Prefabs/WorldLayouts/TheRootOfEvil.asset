@@ -16,7 +16,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a7b2ead393f821142b7c3e1f08f63d55, type: 2}
   nextLevels: []
   isFinished: 0
-  isDiscovered: 1
+  isDiscovered: 0
   isSpecial: 0
   levelDescription: At the root of the great tree, a corruption occurred. That is
     the source, that is the pain this world endures. Until it is there, no light

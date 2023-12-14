@@ -6,8 +6,10 @@ public class Corruption : MonoBehaviour
 {    
     [SerializeField] float existanceTime = 2f;
     [SerializeField] float damage = 1f;
+    [SerializeField] bool isTemporary = true;
     private void OnEnable()
     {
+        if(!isTemporary) return;
         StartCoroutine(WaitAndTurnOff());
     }
 

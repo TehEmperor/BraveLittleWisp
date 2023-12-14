@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Sunflora Pixie
-  m_Shader: {fileID: -6465566751694194690, guid: 6d036a64c468124428e84849d17afcad, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 4e0850f4cf2e4954e8b7ef566b39904d, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -100,7 +100,7 @@ Material:
     - _Mode: 3
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Power: 1
+    - _Power: 0.7
     - _QueueControl: 0
     - _QueueOffset: 0
     - _SmoothnessTextureChannel: 0
@@ -111,6 +111,7 @@ Material:
     m_Colors:
     - _Color: {r: 0.19223925, g: 0.9056604, b: 0.87728566, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _GlowColor: {r: 0.3676575, g: 0.509434, b: 0.5065387, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7390644575413230853
 MonoBehaviour:

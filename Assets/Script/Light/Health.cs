@@ -16,6 +16,8 @@ public class Health : MonoBehaviour
     float timeSinceLastDamage = 0;
 
     public event Action onDeath;
+    public event Action onHeal;
+    public event Action onDmg;
 
     private void Start()
     {
@@ -41,7 +43,7 @@ public class Health : MonoBehaviour
     public void GetDamaged(float dmg)
     {
         if (!isAlive) return;
-    
+        onDmg?.Invoke();
         timeSinceLastDamage = 0;
         if(bonusHealth > 0)
         {
@@ -89,10 +91,11 @@ public class Health : MonoBehaviour
 
     public void GetHealed(float heal)
     {
-        if(noHeal) return;
+        if(noHeal) return;       
         float healthAfterHeal = Mathf.Clamp(playerCurrentHealth + heal, 0f, playerMaxHealth);
         if (healthAfterHeal < playerMaxHealth)
         {
+            onHeal?.Invoke();
             GetComponent<AudioSource>().PlayOneShot(healSound);
         }
         playerCurrentHealth = healthAfterHeal;

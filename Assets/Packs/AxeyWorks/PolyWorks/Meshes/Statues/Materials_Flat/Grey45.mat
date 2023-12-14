@@ -32,6 +32,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _FrontNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -44,7 +48,27 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SideNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TopNormal:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -64,31 +88,51 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _Blend: 0
+    - _BlendX: 1
+    - _BlendY: 1
+    - _BlendZ: 1
     - _BumpScale: 1
+    - _ColourVariation: 0
     - _Cull: 2
     - _Cutoff: 0.5
     - _DstBlend: 0
     - _EnvironmentReflections: 1
+    - _Facet: 0
+    - _FlipXFaces: 0
+    - _FlipYFaces: 0
+    - _FlipZFaces: 0
+    - _FrontTexTile: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _GradientMix: 0.25
+    - _GradientPosition: -0.08
     - _Metallic: 0
+    - _ObjectBased: 1
     - _OcclusionStrength: 1
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _RearFacesEnabled: 1
     - _ReceiveShadows: 1
+    - _SideTexTile: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
+    - _TopTexTile: 1
+    - _UseNormalFront: 0
+    - _UseNormalSide: 0
+    - _UseNormalTop: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0.7764706, g: 0.7764706, b: 0.7764706, a: 1}
     - _Color: {r: 0.7764706, g: 0.7764706, b: 0.7764706, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SideColour: {r: 1, g: 0.2028302, b: 0.2082488, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _TopColour: {r: 0, g: 1, b: 0.9919441, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &2340716418540988199
 MonoBehaviour:

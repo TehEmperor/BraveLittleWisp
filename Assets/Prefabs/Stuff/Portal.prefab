@@ -161,6 +161,7 @@ MonoBehaviour:
   myLevel: {fileID: 0}
   isSecret: 0
   fader: {fileID: 4788252557799956084}
+  levelLoadProximity: 1.5
   fireColumnPrefab: {fileID: 8339981334457741881, guid: e243b566da6eaeb4bbb695ddb5aabb0c, type: 3}
   fadeOutDuration: 1
   fadeInDuration: 1

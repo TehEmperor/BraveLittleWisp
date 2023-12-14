@@ -9,6 +9,7 @@ public class Portal : MonoBehaviour
     [SerializeField] Level myLevel = null;
     [SerializeField] bool isSecret = false;
     [SerializeField] Fader fader;
+    [SerializeField] float levelLoadProximity = 1f;
     public GameObject fireColumnPrefab;
     public float fadeOutDuration = 1f;
     public float fadeInDuration = 1f;
@@ -20,12 +21,22 @@ public class Portal : MonoBehaviour
     GameObject player;
     public event Action onAllSoulsCollected;
     public static event Action<Portal> onPlayerWithinRange; 
+    Coroutine levelLodaRoutine=null;
       
     private void Start()
     {
         soulsNeeded = SoulsRquiredToActivateCount();
         fires =  SpawnColumns(fireColumnPrefab,soulsNeeded);
         HushFires(isActivated);                    
+    }
+
+    private void Update() 
+    {
+        if (!isActivated) return;
+        if(player == null) return;
+        if(Vector3.Distance(gameObject.transform.position, player.transform.position) > levelLoadProximity) return;
+        if(levelLodaRoutine != null) return;
+        levelLodaRoutine = StartCoroutine(LoadNextLevel());
     }
 
     private int SoulsRquiredToActivateCount()
@@ -82,9 +93,7 @@ public class Portal : MonoBehaviour
         else if (other.gameObject.CompareTag(Tag.PLAYER))
         {
             onPlayerWithinRange?.Invoke(this);
-            player = other.gameObject;
-            if(!isActivated) return;
-            StartCoroutine(LoadNextLevel());
+            player = other.gameObject;            
         }
     }
 

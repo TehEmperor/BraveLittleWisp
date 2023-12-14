@@ -16,8 +16,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ff7d22e61443b9d43a6e92732ff43dc2, type: 2}
   nextLevels:
   - {fileID: 11400000, guid: 9d874a460ce9c4d43bdc50d6a19d5b9c, type: 2}
-  isFinished: 1
-  isDiscovered: 1
+  isFinished: 0
+  isDiscovered: 0
   isSpecial: 0
   levelDescription: In their last attempt to seal off the source of the evil, sorcerer-alchemists
     of the east created light everburning. Just as it keeps evil at bay, it also

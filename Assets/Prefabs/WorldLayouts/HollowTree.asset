@@ -16,7 +16,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0f8fed79d303a3940a5757206db19111, type: 2}
   nextLevels:
   - {fileID: 11400000, guid: 13c03d2d64a26f64daa0335efc10389c, type: 2}
-  isFinished: 1
+  isFinished: 0
   isDiscovered: 1
   isSpecial: 0
   levelDescription: A hollowed trunk of a once great and ancient tree. You were born

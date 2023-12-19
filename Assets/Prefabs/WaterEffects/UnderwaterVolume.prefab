@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1660183756138728700}
   - component: {fileID: 1660183756138728699}
   - component: {fileID: 1660183756138728698}
+  - component: {fileID: 2463067018525783688}
   m_Layer: 7
   m_Name: UnderwaterVolume
   m_TagString: Untagged
@@ -97,3 +98,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2463067018525783688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660183756138728696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 1
+  blendDistance: 0
+  weight: 0
+  sharedProfile: {fileID: 11400000, guid: c9fb2978968f8cc4eb76850402152280, type: 2}

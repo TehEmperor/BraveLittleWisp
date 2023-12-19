@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 656f695e87ec77744a13644e7ddd9636, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: 6628c36ff41df2a42b2fc7a26621b8b4, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 9fbf926ba43a5f44eac799b1e32e37cb, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -14492,19 +14492,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7139064691098448103, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: NaN
+      value: -4.398606e+19
       objectReference: {fileID: 0}
     - target: {fileID: 7139064691098448103, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 6e-45
+      value: 1.05e-43
       objectReference: {fileID: 0}
     - target: {fileID: 7139064691098448103, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 7e-45
+      value: 2.6562857e+20
       objectReference: {fileID: 0}
     - target: {fileID: 7139064691098448103, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: NaN
+      value: 1.0691825e-38
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8960ecac695cd84e898c0b93d54ae4c, type: 3}
@@ -53716,7 +53716,7 @@ MonoBehaviour:
   emittingMat: {fileID: 2100000, guid: e872f3c7acc0d4c4ab57776cb77dfbb8, type: 2}
   emissionColor: {r: 0, g: 1, b: 1, a: 1}
   objToMelt: {fileID: 928937985}
-  rayMat: {fileID: 2100000, guid: 872658b6cc7cffd4ba72e7a0d7c6959b, type: 2}
+  rayMat: {fileID: 2100000, guid: b230508a42075445fb7dff370b76b95e, type: 2}
   isFull: 0
   isRotating: 0
   rotSpeed: 1

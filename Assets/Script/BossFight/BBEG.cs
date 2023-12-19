@@ -16,6 +16,8 @@ public class BBEG : MonoBehaviour
     [SerializeField] float maxEnemieCount = 2f;
     [SerializeField] float pPosUpdateInterval = 0.3f;
     [SerializeField] float corruptionPlacementInterval = 1f;
+    [SerializeField] float minBetweenCorruptionDistance = 0.65f;
+    private Vector3 lastPosition = Vector3.zero;
     [Header("FightStages")]
     [SerializeField] ChargeCrystal canon;
     [SerializeField] Transform crystalMass;
@@ -173,8 +175,8 @@ public class BBEG : MonoBehaviour
     {
         if(timeSinceLastPPUpdate >= pPosUpdateInterval)
         {
-        followPathPhTwo.Add(target.transform.position);
-        timeSinceLastPPUpdate = 0;
+             followPathPhTwo.Add(target.transform.position);
+             timeSinceLastPPUpdate = 0;            
         }
     }
 
@@ -192,9 +194,19 @@ public class BBEG : MonoBehaviour
         GameObject corruption = CorruptionPool.SharedInstance.GetPooledCorruption();
         if (corruption != null)
         {
-            Vector3 position = GetNextCorruptionPosition();
+            Vector3 position = GetNextCorruptionPosition();            
+            if(Vector3.Distance(lastPosition, position)<minBetweenCorruptionDistance)
+            {
+                Vector2 adjustment = Random.insideUnitCircle;
+                corruption.transform.position = position + new Vector3(adjustment.x, 0, adjustment.y);
+                followPathPhTwo.Remove(position);
+                lastPosition = corruption.transform.position;
+                corruption.SetActive(true);
+                return;
+            }
             corruption.transform.position = position;
             followPathPhTwo.Remove(position);
+            lastPosition = position;
             corruption.SetActive(true);
         }
     }
@@ -223,7 +235,7 @@ public class BBEG : MonoBehaviour
     private void ModifyCorruptionIntencity()
     {
         float mod = target.GetComponent<PlayerController>().GetLightAsFracture();
-        Debug.Log(mod);        
+            
         corruptionPlacementInterval = Mathf.Clamp(maxCorruptionPlacementInterval - mod, 0.1f, maxCorruptionPlacementInterval);
     }
 
